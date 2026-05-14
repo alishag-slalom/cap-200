@@ -366,7 +366,7 @@ const regionIcons: Record<string, string> = {
       <v-col v-for="rd in regionalData" :key="rd.region" cols="12" sm="6" lg="3">
         <PerformanceCard
           :title="rd.region"
-          :icon="regionIcons[rd.region]"
+          :icon="regionIcons[rd.region] ?? 'mdi-map-marker'"
           :status="{ color: statusColor(rd.onTimeRate), label: statusLabel(rd.onTimeRate) }"
           :shipments="formatNumber(rd.shipments)"
           :on-time-rate="rd.onTimeRate.toFixed(1) + '%'"
