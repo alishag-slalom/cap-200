@@ -37,11 +37,15 @@ Each month should also include a breakdown by freight mode: Truckload (TL), LTL,
 – Hovering a chart bar or line point shows a tooltip with the full breakdown for that data point
 
 ## Style
-– Dark theme by default — dark navy background (#0F1B2D), white content surfaces
-– Clean, minimal, enough white space and padding to not feel cluttered.
-– Charts use a cohesive 3-color palette for freight modes — not rainbow
-– Status colors follow a strict semantic system: green (#1DB87A) for healthy, amber (#F5A623) for watch, red (#E03B3B) for attention needed — always paired with a label, never color alone
-– Typography uses tabular figures for all data values so numbers stay aligned
+– Light/dark mode toggle in the app bar — dark mode is the default
+– Dark mode: near-black background (#0A0F1C), elevated card surfaces (#111827), primary accent (#1A6EFF)
+– Light mode: off-white background (#F4F6FA), white card surfaces (#FFFFFF), same primary accent
+– Glassmorphism card treatment — subtle frosted-glass effect with backdrop blur and a thin border
+– Gradient accents on KPI cards — a soft blue-to-purple sweep behind the metric value
+– Charts use a tight 3-color palette that works in both modes — not rainbow
+– Status colors: green (#1DB87A), amber (#F5A623), red (#E03B3B) — always paired with a label
+– Smooth transitions on theme switch — all color changes animate at 200ms ease
+– Typography: Inter (or system-ui fallback), tabular figures for all data values
 – Mobile responsive — cards stack on small screens, table scrolls horizontally
 
 ## Tech
@@ -51,5 +55,4 @@ Each month should also include a breakdown by freight mode: Truckload (TL), LTL,
 – Single page — no routing needed for this prototype
 – No authentication — this is a read-only prototype for demonstration
 – Chart tooltips and hover states are the primary detail mechanism — no modals or drill-downs in v1
-
-
+– Vuetify's built-in theme system handles light/dark token switching
