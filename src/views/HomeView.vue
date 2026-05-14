@@ -293,58 +293,50 @@ const regionIcons: Record<string, string> = {
     <!-- KPI Summary Cards -->
     <v-row class="mb-2">
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card pa-4" rounded="lg">
-          <div class="kpi-gradient pa-4 text-center rounded-lg">
-            <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Total Shipments</div>
-            <div class="text-h4 font-weight-bold tabular-nums">{{ formatNumber(totalShipments) }}</div>
-            <div v-if="trendPct(totalShipments, 'shipments') != null" class="text-caption mt-1" :class="trendColor(trendPct(totalShipments, 'shipments'))">
-              <v-icon size="14" :icon="trendIcon(trendPct(totalShipments, 'shipments'))" />
-              {{ Math.abs(trendPct(totalShipments, 'shipments')!).toFixed(1) }}% vs prior month
-            </div>
-            <div v-else class="text-caption mt-1 text-medium-emphasis">Full year total</div>
+        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
+          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Total Shipments</div>
+          <div class="text-h4 font-weight-bold tabular-nums">{{ formatNumber(totalShipments) }}</div>
+          <div v-if="trendPct(totalShipments, 'shipments') != null" class="text-caption mt-1" :class="trendColor(trendPct(totalShipments, 'shipments'))">
+            <v-icon size="14" :icon="trendIcon(trendPct(totalShipments, 'shipments'))" />
+            {{ Math.abs(trendPct(totalShipments, 'shipments')!).toFixed(1) }}% vs prior month
           </div>
+          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year total</div>
         </v-card>
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card pa-4" rounded="lg">
-          <div class="kpi-gradient pa-4 text-center rounded-lg">
-            <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">On-Time Delivery</div>
-            <div class="text-h4 font-weight-bold tabular-nums">{{ onTimeRate.toFixed(1) }}%</div>
-            <div v-if="trendPct(onTimeRate, 'onTimeRate') != null" class="text-caption mt-1" :class="trendColor(trendPct(onTimeRate, 'onTimeRate'))">
-              <v-icon size="14" :icon="trendIcon(trendPct(onTimeRate, 'onTimeRate'))" />
-              {{ Math.abs(trendPct(onTimeRate, 'onTimeRate')!).toFixed(1) }}% vs prior month
-            </div>
-            <div v-else class="text-caption mt-1 text-medium-emphasis">Full year average</div>
+        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
+          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">On-Time Delivery</div>
+          <div class="text-h4 font-weight-bold tabular-nums">{{ onTimeRate.toFixed(1) }}%</div>
+          <div v-if="trendPct(onTimeRate, 'onTimeRate') != null" class="text-caption mt-1" :class="trendColor(trendPct(onTimeRate, 'onTimeRate'))">
+            <v-icon size="14" :icon="trendIcon(trendPct(onTimeRate, 'onTimeRate'))" />
+            {{ Math.abs(trendPct(onTimeRate, 'onTimeRate')!).toFixed(1) }}% vs prior month
           </div>
+          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year average</div>
         </v-card>
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card pa-4" rounded="lg">
-          <div class="kpi-gradient pa-4 text-center rounded-lg">
-            <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Open Exceptions</div>
-            <div class="text-h4 font-weight-bold tabular-nums">{{ formatNumber(openExceptions) }}</div>
-            <div v-if="trendPct(openExceptions, 'exceptions') != null" class="text-caption mt-1" :class="trendColor(trendPct(openExceptions, 'exceptions'), true)">
-              <v-icon size="14" :icon="trendIcon(trendPct(openExceptions, 'exceptions'), true)" />
-              {{ Math.abs(trendPct(openExceptions, 'exceptions')!).toFixed(1) }}% vs prior month
-            </div>
-            <div v-else class="text-caption mt-1 text-medium-emphasis">Full year total</div>
+        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
+          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Open Exceptions</div>
+          <div class="text-h4 font-weight-bold tabular-nums">{{ formatNumber(openExceptions) }}</div>
+          <div v-if="trendPct(openExceptions, 'exceptions') != null" class="text-caption mt-1" :class="trendColor(trendPct(openExceptions, 'exceptions'), true)">
+            <v-icon size="14" :icon="trendIcon(trendPct(openExceptions, 'exceptions'), true)" />
+            {{ Math.abs(trendPct(openExceptions, 'exceptions')!).toFixed(1) }}% vs prior month
           </div>
+          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year total</div>
         </v-card>
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card pa-4" rounded="lg">
-          <div class="kpi-gradient pa-4 text-center rounded-lg">
-            <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Avg. Transit Days</div>
-            <div class="text-h4 font-weight-bold tabular-nums">{{ avgTransitDays.toFixed(1) }}</div>
-            <div v-if="trendPct(avgTransitDays, 'avgTransitDays') != null" class="text-caption mt-1" :class="trendColor(trendPct(avgTransitDays, 'avgTransitDays'), true)">
-              <v-icon size="14" :icon="trendIcon(trendPct(avgTransitDays, 'avgTransitDays'), true)" />
-              {{ Math.abs(trendPct(avgTransitDays, 'avgTransitDays')!).toFixed(1) }}% vs prior month
-            </div>
-            <div v-else class="text-caption mt-1 text-medium-emphasis">Full year average</div>
+        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
+          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Avg. Transit Days</div>
+          <div class="text-h4 font-weight-bold tabular-nums">{{ avgTransitDays.toFixed(1) }}</div>
+          <div v-if="trendPct(avgTransitDays, 'avgTransitDays') != null" class="text-caption mt-1" :class="trendColor(trendPct(avgTransitDays, 'avgTransitDays'), true)">
+            <v-icon size="14" :icon="trendIcon(trendPct(avgTransitDays, 'avgTransitDays'), true)" />
+            {{ Math.abs(trendPct(avgTransitDays, 'avgTransitDays')!).toFixed(1) }}% vs prior month
           </div>
+          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year average</div>
         </v-card>
       </v-col>
     </v-row>
@@ -375,7 +367,7 @@ const regionIcons: Record<string, string> = {
     <div style="height: 24px"></div>
 
     <!-- Regional Performance Grid -->
-    <div class="text-subtitle-1 font-weight-medium mb-3">Regional Performance</div>
+    <div class="text-h5 font-weight-bold mb-7">Regional Performance</div>
     <v-row class="mb-2">
       <v-col v-for="rd in regionalData" :key="rd.region" cols="12" sm="6" lg="3">
         <v-card class="glass-card pa-4" rounded="lg">
@@ -424,7 +416,7 @@ const regionIcons: Record<string, string> = {
     <div style="height: 24px"></div>
 
     <!-- Exceptions Table -->
-    <div class="text-subtitle-1 font-weight-medium mb-3">Open Exceptions</div>
+    <div class="text-h5 font-weight-bold mb-7">Open Exceptions</div>
     <v-card class="glass-card" rounded="lg">
       <v-data-table
         :headers="exceptionHeaders"
