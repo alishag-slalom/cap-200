@@ -21,12 +21,11 @@ const selectedMonth = ref('all')
 
 <template>
   <v-app>
-    <v-app-bar elevation="0" class="glass-card" style="border-bottom: 1px solid rgba(255,255,255,0.06)">
+    <v-app-bar elevation="0" class="glass-card px-4 px-md-6" style="border-bottom: 1px solid rgba(255,255,255,0.06)">
       <v-app-bar-title>
         <div class="d-flex align-center ga-2">
           <v-icon icon="mdi-truck-fast-outline" color="primary" />
           <span class="font-weight-bold">FastForward Logistics</span>
-          <span class="text-medium-emphasis d-none d-sm-inline">— Operations Dashboard</span>
         </div>
       </v-app-bar-title>
 
@@ -38,7 +37,7 @@ const selectedMonth = ref('all')
           variant="outlined"
           hide-details
           style="max-width: 180px"
-          class="mr-2"
+          class="mr-4"
         />
         <v-btn
           :icon="isDark ? 'mdi-weather-sunny' : 'mdi-weather-night'"

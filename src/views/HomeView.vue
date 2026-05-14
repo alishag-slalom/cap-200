@@ -387,8 +387,9 @@ const regionIcons: Record<string, string> = {
         :items="filteredExceptions"
         :items-per-page="10"
         density="comfortable"
-        class="bg-transparent"
+        class="bg-transparent exceptions-table"
         :sort-by="[{ key: 'priority', order: 'desc' }, { key: 'ageDays', order: 'desc' }]"
+        hover
       >
         <template v-slot:item.priority="{ item }">
           <v-chip size="small" :color="priorityColor(item.priority)" variant="tonal" class="font-weight-medium">
@@ -409,5 +410,9 @@ const regionIcons: Record<string, string> = {
   </v-container>
 </template>
 
-<style scoped>
+<style>
+.exceptions-table tr:hover td {
+  background-color: rgba(26, 110, 255, 0.06);
+  transition: background-color 150ms ease;
+}
 </style>

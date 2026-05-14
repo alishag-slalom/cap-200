@@ -16,18 +16,15 @@ defineProps<{
 
 <template>
   <v-card class="glass-card pa-4" rounded="lg">
-    <div class="d-flex align-center justify-space-between mb-3">
-      <div class="d-flex align-center ga-2">
-        <v-icon :icon="icon" size="20" color="primary" />
-        <span class="text-subtitle-2 font-weight-medium">{{ title }}</span>
-      </div>
+    <div class="d-flex align-center justify-space-between mb-6" style="min-height: 48px">
+      <span class="text-subtitle-1 font-weight-bold" style="line-height: 2">{{ title }}</span>
       <v-chip
         size="x-small"
         :color="status.color"
         variant="flat"
         class="font-weight-medium"
       >
-        <v-icon start size="8" icon="mdi-circle" />
+        <v-icon start size="12" class="mr-1" :icon="status.label === 'On Target' ? 'mdi-check-circle' : status.label === 'At Risk' ? 'mdi-alert' : 'mdi-close-circle'" />
         {{ status.label }}
       </v-chip>
     </div>
