@@ -2,6 +2,8 @@
 import { computed } from 'vue'
 import { useTheme } from 'vuetify'
 import { Bar, Line } from 'vue-chartjs'
+import MetricCard from '@/components/MetricCard.vue'
+import PerformanceCard from '@/components/PerformanceCard.vue'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -60,6 +62,14 @@ const totalShipments = computed(() => sumAcrossRegions(filteredMonths.value, 'sh
 const onTimeRate = computed(() => avgAcrossRegions(filteredMonths.value, 'onTimeRate'))
 const openExceptions = computed(() => sumAcrossRegions(filteredMonths.value, 'exceptions'))
 const avgTransitDays = computed(() => avgAcrossRegions(filteredMonths.value, 'avgTransitDays'))
+
+// ─── KPI descriptions ───
+function kpiDescription(current: number, key: string, fallback: string, invertGood = false) {
+  const pct = trendPct(current, key)
+  if (pct == null) return fallback
+  const dir = pct > 0 ? '↑' : pct < 0 ? '↓' : '—'
+  return `${dir} ${Math.abs(pct).toFixed(1)}% vs prior month`
+}
 
 // ─── KPI trend vs prior ───
 function getPriorKpi(key: string) {
@@ -293,51 +303,35 @@ const regionIcons: Record<string, string> = {
     <!-- KPI Summary Cards -->
     <v-row class="mb-2">
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
-          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Total Shipments</div>
-          <div class="text-h4 font-weight-bold tabular-nums">{{ formatNumber(totalShipments) }}</div>
-          <div v-if="trendPct(totalShipments, 'shipments') != null" class="text-caption mt-1" :class="trendColor(trendPct(totalShipments, 'shipments'))">
-            <v-icon size="14" :icon="trendIcon(trendPct(totalShipments, 'shipments'))" />
-            {{ Math.abs(trendPct(totalShipments, 'shipments')!).toFixed(1) }}% vs prior month
-          </div>
-          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year total</div>
-        </v-card>
+        <MetricCard
+          label="Total Shipments"
+          :value="formatNumber(totalShipments)"
+          :description="kpiDescription(totalShipments, 'shipments', 'Full year total')"
+        />
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
-          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">On-Time Delivery</div>
-          <div class="text-h4 font-weight-bold tabular-nums">{{ onTimeRate.toFixed(1) }}%</div>
-          <div v-if="trendPct(onTimeRate, 'onTimeRate') != null" class="text-caption mt-1" :class="trendColor(trendPct(onTimeRate, 'onTimeRate'))">
-            <v-icon size="14" :icon="trendIcon(trendPct(onTimeRate, 'onTimeRate'))" />
-            {{ Math.abs(trendPct(onTimeRate, 'onTimeRate')!).toFixed(1) }}% vs prior month
-          </div>
-          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year average</div>
-        </v-card>
+        <MetricCard
+          label="On-Time Delivery"
+          :value="onTimeRate.toFixed(1) + '%'"
+          :description="kpiDescription(onTimeRate, 'onTimeRate', 'Full year average')"
+        />
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
-          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Open Exceptions</div>
-          <div class="text-h4 font-weight-bold tabular-nums">{{ formatNumber(openExceptions) }}</div>
-          <div v-if="trendPct(openExceptions, 'exceptions') != null" class="text-caption mt-1" :class="trendColor(trendPct(openExceptions, 'exceptions'), true)">
-            <v-icon size="14" :icon="trendIcon(trendPct(openExceptions, 'exceptions'), true)" />
-            {{ Math.abs(trendPct(openExceptions, 'exceptions')!).toFixed(1) }}% vs prior month
-          </div>
-          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year total</div>
-        </v-card>
+        <MetricCard
+          label="Open Exceptions"
+          :value="formatNumber(openExceptions)"
+          :description="kpiDescription(openExceptions, 'exceptions', 'Full year total', true)"
+        />
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
-        <v-card class="glass-card kpi-gradient pa-4 text-center" rounded="lg" flat>
-          <div class="text-caption text-medium-emphasis text-uppercase font-weight-medium mb-1">Avg. Transit Days</div>
-          <div class="text-h4 font-weight-bold tabular-nums">{{ avgTransitDays.toFixed(1) }}</div>
-          <div v-if="trendPct(avgTransitDays, 'avgTransitDays') != null" class="text-caption mt-1" :class="trendColor(trendPct(avgTransitDays, 'avgTransitDays'), true)">
-            <v-icon size="14" :icon="trendIcon(trendPct(avgTransitDays, 'avgTransitDays'), true)" />
-            {{ Math.abs(trendPct(avgTransitDays, 'avgTransitDays')!).toFixed(1) }}% vs prior month
-          </div>
-          <div v-else class="text-caption mt-1 text-medium-emphasis">Full year average</div>
-        </v-card>
+        <MetricCard
+          label="Avg. Transit Days"
+          :value="avgTransitDays.toFixed(1)"
+          :description="kpiDescription(avgTransitDays, 'avgTransitDays', 'Full year average', true)"
+        />
       </v-col>
     </v-row>
 
@@ -370,53 +364,23 @@ const regionIcons: Record<string, string> = {
     <div class="text-h5 font-weight-bold mb-7">Regional Performance</div>
     <v-row class="mb-2">
       <v-col v-for="rd in regionalData" :key="rd.region" cols="12" sm="6" lg="3">
-        <v-card class="glass-card pa-4" rounded="lg">
-          <div class="d-flex align-center justify-space-between mb-3">
-            <div class="d-flex align-center ga-2">
-              <v-icon :icon="regionIcons[rd.region]" size="20" color="primary" />
-              <span class="text-subtitle-2 font-weight-medium">{{ rd.region }}</span>
-            </div>
-            <v-chip
-              size="x-small"
-              :color="statusColor(rd.onTimeRate)"
-              variant="flat"
-              class="font-weight-medium"
-            >
-              <v-icon start size="8" icon="mdi-circle" />
-              {{ statusLabel(rd.onTimeRate) }}
-            </v-chip>
-          </div>
-
-          <v-row dense>
-            <v-col cols="6">
-              <div class="text-caption text-medium-emphasis">Shipments</div>
-              <div class="text-body-1 font-weight-medium tabular-nums">{{ formatNumber(rd.shipments) }}</div>
-            </v-col>
-            <v-col cols="6">
-              <div class="text-caption text-medium-emphasis">On-Time</div>
-              <div class="text-body-1 font-weight-medium tabular-nums">{{ rd.onTimeRate.toFixed(1) }}%</div>
-            </v-col>
-            <v-col cols="6">
-              <div class="text-caption text-medium-emphasis">Exceptions</div>
-              <div class="text-body-1 font-weight-medium tabular-nums">{{ rd.exceptions }}</div>
-            </v-col>
-            <v-col cols="6">
-              <div class="text-caption text-medium-emphasis">Avg Transit</div>
-              <div class="text-body-1 font-weight-medium tabular-nums">{{ rd.avgTransitDays.toFixed(1) }} days</div>
-            </v-col>
-            <v-col cols="12">
-              <div class="text-caption text-medium-emphasis">Revenue</div>
-              <div class="text-body-1 font-weight-medium tabular-nums">{{ formatCurrency(rd.revenue) }}</div>
-            </v-col>
-          </v-row>
-        </v-card>
+        <PerformanceCard
+          :title="rd.region"
+          :icon="regionIcons[rd.region]"
+          :status="{ color: statusColor(rd.onTimeRate), label: statusLabel(rd.onTimeRate) }"
+          :shipments="formatNumber(rd.shipments)"
+          :on-time-rate="rd.onTimeRate.toFixed(1) + '%'"
+          :exceptions="rd.exceptions"
+          :avg-transit-days="rd.avgTransitDays.toFixed(1) + ' days'"
+          :revenue="formatCurrency(rd.revenue)"
+        />
       </v-col>
     </v-row>
 
     <div style="height: 24px"></div>
 
     <!-- Exceptions Table -->
-    <div class="text-h5 font-weight-bold mb-7">Open Exceptions</div>
+    <div class="text-h5 font-weight-bold mb-10">Open Exceptions</div>
     <v-card class="glass-card" rounded="lg">
       <v-data-table
         :headers="exceptionHeaders"
