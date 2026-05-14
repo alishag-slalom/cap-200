@@ -349,6 +349,8 @@ const regionIcons: Record<string, string> = {
       </v-col>
     </v-row>
 
+    <div style="height: 24px"></div>
+
     <!-- Charts Row -->
     <v-row class="mb-2">
       <v-col cols="12" md="6">
@@ -370,8 +372,10 @@ const regionIcons: Record<string, string> = {
       </v-col>
     </v-row>
 
+    <div style="height: 24px"></div>
+
     <!-- Regional Performance Grid -->
-    <div class="text-subtitle-1 font-weight-medium mb-3 mt-2">Regional Performance</div>
+    <div class="text-subtitle-1 font-weight-medium mb-3">Regional Performance</div>
     <v-row class="mb-2">
       <v-col v-for="rd in regionalData" :key="rd.region" cols="12" sm="6" lg="3">
         <v-card class="glass-card pa-4" rounded="lg">
@@ -417,8 +421,10 @@ const regionIcons: Record<string, string> = {
       </v-col>
     </v-row>
 
+    <div style="height: 24px"></div>
+
     <!-- Exceptions Table -->
-    <div class="text-subtitle-1 font-weight-medium mb-3 mt-2">Open Exceptions</div>
+    <div class="text-subtitle-1 font-weight-medium mb-3">Open Exceptions</div>
     <v-card class="glass-card" rounded="lg">
       <v-data-table
         :headers="exceptionHeaders"
