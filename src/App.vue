@@ -3,12 +3,19 @@ import { RouterView } from 'vue-router'
 import { useTheme } from 'vuetify'
 import { ref, computed } from 'vue'
 import metricsData from '@/data/metrics.json'
+import LoginGate from '@/components/LoginGate.vue'
 
 const theme = useTheme()
 const isDark = computed(() => theme.global.name.value === 'dark')
+const isAuthenticated = ref(sessionStorage.getItem('ops-auth') === '1')
 
 function toggleTheme() {
   theme.global.name.value = isDark.value ? 'light' : 'dark'
+}
+
+function logout() {
+  sessionStorage.removeItem('ops-auth')
+  isAuthenticated.value = false
 }
 
 const monthOptions = [
@@ -21,6 +28,11 @@ const selectedMonth = ref('all')
 
 <template>
   <v-app>
+    <template v-if="!isAuthenticated">
+      <LoginGate @authenticated="isAuthenticated = true" />
+    </template>
+
+    <template v-else>
     <v-app-bar elevation="0" class="glass-card px-4 px-md-6" style="border-bottom: 1px solid rgba(255,255,255,0.06)">
       <v-app-bar-title>
         <div class="d-flex align-center ga-2">
@@ -45,12 +57,20 @@ const selectedMonth = ref('all')
           @click="toggleTheme"
           size="small"
         />
+        <v-btn
+          icon="mdi-logout"
+          variant="text"
+          @click="logout"
+          size="small"
+          class="ml-2"
+        />
       </template>
     </v-app-bar>
 
     <v-main>
       <RouterView :selected-month="selectedMonth" />
     </v-main>
+    </template>
   </v-app>
 </template>
 
