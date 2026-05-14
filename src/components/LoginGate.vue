@@ -29,41 +29,45 @@ function submit() {
 </script>
 
 <template>
-  <v-container class="fill-height" fluid>
-    <v-row align="center" justify="center">
-      <v-col cols="12" sm="8" md="4">
-        <v-card class="glass-card pa-8" rounded="lg">
-          <div class="text-center mb-6">
-            <v-icon icon="mdi-truck-fast-outline" color="primary" size="48" class="mb-4" />
-            <div class="text-h5 font-weight-bold">FastForward Logistics</div>
-            <div class="text-body-2 text-medium-emphasis mt-1">Operations Dashboard</div>
-          </div>
+  <v-container class="d-flex align-center justify-center" fluid style="min-height: 100vh">
+    <v-card class="glass-card pa-12" rounded="lg" style="width: 100%; max-width: 420px">
+      <div class="text-center" style="margin-bottom: 48px">
+        <v-icon icon="mdi-truck-fast-outline" color="primary" size="48" style="margin-bottom: 20px" />
+        <div class="text-h5 font-weight-bold">FastForward Logistics</div>
+        <div class="text-body-2 text-medium-emphasis" style="margin-top: 8px">Operations Dashboard</div>
+      </div>
 
-          <v-form @submit.prevent="submit">
-            <v-text-field
-              v-model="password"
-              label="Password"
-              type="password"
-              variant="outlined"
-              density="comfortable"
-              hide-details="auto"
-              :error="error"
-              :error-messages="error ? 'Incorrect password' : ''"
-              autofocus
-              @update:model-value="error = false"
-            />
-            <v-btn
-              type="submit"
-              color="primary"
-              block
-              size="large"
-              class="mt-4 font-weight-medium"
-            >
-              Sign In
-            </v-btn>
-          </v-form>
-        </v-card>
-      </v-col>
-    </v-row>
+      <v-form @submit.prevent="submit">
+        <v-text-field
+          v-model="password"
+          label="Password"
+          type="password"
+          variant="outlined"
+          density="comfortable"
+          hide-details="auto"
+          :error="error"
+          :error-messages="error ? 'Incorrect password' : ''"
+          autofocus
+          class="login-password"
+          @update:model-value="error = false"
+        />
+        <v-btn
+          type="submit"
+          color="primary"
+          block
+          size="large"
+          class="font-weight-medium"
+          style="margin-top: 32px"
+        >
+          Sign In
+        </v-btn>
+      </v-form>
+    </v-card>
   </v-container>
 </template>
+
+<style>
+.login-password .v-field__input {
+  padding: 12px 16px;
+}
+</style>
