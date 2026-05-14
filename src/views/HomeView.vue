@@ -301,7 +301,7 @@ const regionIcons: Record<string, string> = {
 <template>
   <v-container fluid class="pa-4 pa-md-6">
     <!-- KPI Summary Cards -->
-    <v-row class="mb-2">
+    <v-row class="mb-8">
       <v-col cols="12" sm="6" lg="3">
         <MetricCard
           label="Total Shipments"
@@ -341,7 +341,7 @@ const regionIcons: Record<string, string> = {
     <v-row class="mb-2">
       <v-col cols="12" md="6">
         <v-card class="glass-card pa-4" rounded="lg">
-          <div class="text-subtitle-2 font-weight-medium mb-3">Monthly Shipment Volume by Mode</div>
+          <div class="text-h5 font-weight-bold mb-7">Monthly Shipment Volume by Mode</div>
           <div style="height: 300px">
             <Bar :data="barChartData" :options="barChartOptions" />
           </div>
@@ -350,7 +350,7 @@ const regionIcons: Record<string, string> = {
 
       <v-col cols="12" md="6">
         <v-card class="glass-card pa-4" rounded="lg">
-          <div class="text-subtitle-2 font-weight-medium mb-3">On-Time Delivery Rate</div>
+          <div class="text-h5 font-weight-bold mb-7">On-Time Delivery Rate</div>
           <div style="height: 300px">
             <Line :data="lineChartData" :options="lineChartOptions" />
           </div>
