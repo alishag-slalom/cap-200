@@ -580,7 +580,7 @@ const regionIcons: Record<string, string> = {
 
     <!-- Charts Row -->
     <v-row class="mb-2">
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" lg="4">
         <v-card class="glass-card pa-4" rounded="lg">
           <div class="text-h5 font-weight-bold mb-7">Monthly Shipment Volume by Mode</div>
           <div style="height: 300px">
@@ -589,7 +589,7 @@ const regionIcons: Record<string, string> = {
         </v-card>
       </v-col>
 
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" lg="4">
         <v-card class="glass-card pa-4" rounded="lg">
           <div class="text-h5 font-weight-bold mb-7">On-Time Delivery Rate</div>
           <div style="height: 300px">
@@ -598,7 +598,7 @@ const regionIcons: Record<string, string> = {
         </v-card>
       </v-col>
 
-      <v-col cols="12" md="6">
+      <v-col cols="12" md="6" lg="4">
         <v-card class="glass-card pa-4" rounded="lg">
           <div class="d-flex align-center justify-space-between flex-wrap ga-2 mb-7">
             <div class="text-h5 font-weight-bold">Exception Events by {{ exceptionChartMode === 'byMonth' ? 'Month' : 'Type' }}</div>
