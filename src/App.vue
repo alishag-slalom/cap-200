@@ -38,6 +38,7 @@ const selectedMonth = ref('all')
         <div class="d-flex align-center ga-2">
           <v-icon icon="mdi-truck-fast-outline" color="primary" />
           <span class="font-weight-bold">FastForward Logistics</span>
+          <span class="text-caption text-medium-emphasis d-none d-sm-inline">— Operations Dashboard</span>
         </div>
       </v-app-bar-title>
 

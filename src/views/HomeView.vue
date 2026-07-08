@@ -63,14 +63,6 @@ const onTimeRate = computed(() => avgAcrossRegions(filteredMonths.value, 'onTime
 const openExceptions = computed(() => sumAcrossRegions(filteredMonths.value, 'exceptions'))
 const avgTransitDays = computed(() => avgAcrossRegions(filteredMonths.value, 'avgTransitDays'))
 
-// ─── KPI descriptions ───
-function kpiDescription(current: number, key: string, fallback: string, invertGood = false) {
-  const pct = trendPct(current, key)
-  if (pct == null) return fallback
-  const dir = pct > 0 ? '↑' : pct < 0 ? '↓' : '—'
-  return `${dir} ${Math.abs(pct).toFixed(1)}% vs prior month`
-}
-
 // ─── KPI trend vs prior ───
 function getPriorKpi(key: string) {
   if (props.selectedMonth === 'all' || !previousMonth.value) return null
@@ -88,18 +80,23 @@ function trendPct(current: number, key: string) {
   return ((current - prior) / prior) * 100
 }
 
-function trendIcon(pct: number | null, invertGood = false) {
-  if (pct == null) return ''
-  if (pct > 0) return invertGood ? 'mdi-arrow-up' : 'mdi-arrow-up'
-  if (pct < 0) return invertGood ? 'mdi-arrow-down' : 'mdi-arrow-down'
-  return 'mdi-minus'
-}
-
-function trendColor(pct: number | null, invertGood = false) {
-  if (pct == null) return 'text-medium-emphasis'
+// "All" has no prior year to compare, and January has no prior month — both
+// are a neutral no-indicator state rather than a trend arrow (see BRIEF.md).
+function trendInfo(current: number, key: string, invertGood = false) {
+  if (props.selectedMonth === 'all' || !previousMonth.value) return null
+  const pct = trendPct(current, key)
+  if (pct == null) return null
   const isPositive = pct > 0
   const good = invertGood ? !isPositive : isPositive
-  return good ? 'text-success' : 'text-error'
+  return {
+    icon: pct === 0 ? 'mdi-minus' : isPositive ? 'mdi-arrow-up' : 'mdi-arrow-down',
+    color: pct === 0 ? 'text-medium-emphasis' : good ? 'text-success' : 'text-error',
+    text: `${Math.abs(pct).toFixed(1)}% vs prior month`,
+  }
+}
+
+function noTrendFallback(allFallback: string) {
+  return props.selectedMonth === 'all' ? allFallback : 'No prior month to compare'
 }
 
 // ─── Regional data ───
@@ -122,8 +119,14 @@ const regionalData = computed(() => {
     })
     const avgOnTime = count > 0 ? onTime / count : 0
     const avgTransit = count > 0 ? transit / count : 0
-    return { region, shipments, onTimeRate: avgOnTime, exceptions, avgTransitDays: avgTransit, revenue }
+    return { region, shipments, onTimeRate: avgOnTime, exceptions, avgTransitDays: avgTransit, revenue, hasData: count > 0 }
   })
+})
+
+// Guards against a malformed or missing metrics.json so the dashboard fails
+// visibly instead of silently rendering blank/zeroed-out cards (see BRIEF.md).
+const dataError = computed(() => {
+  return !metricsData || !Array.isArray(metricsData.months) || metricsData.months.length === 0
 })
 
 function statusColor(rate: number) {
@@ -300,13 +303,23 @@ const regionIcons: Record<string, string> = {
 
 <template>
   <v-container fluid class="pa-4 pa-md-6">
+    <v-alert
+      v-if="dataError"
+      type="error"
+      variant="tonal"
+      title="Unable to load dashboard data"
+      text="metrics.json is missing or malformed. Check src/data/metrics.json."
+    />
+
+    <template v-else>
     <!-- KPI Summary Cards -->
     <v-row class="mb-8">
       <v-col cols="12" sm="6" lg="3">
         <MetricCard
           label="Total Shipments"
           :value="formatNumber(totalShipments)"
-          :description="kpiDescription(totalShipments, 'shipments', 'Full year total')"
+          :trend="trendInfo(totalShipments, 'shipments')"
+          :fallback-text="noTrendFallback('Full year total')"
         />
       </v-col>
 
@@ -314,15 +327,17 @@ const regionIcons: Record<string, string> = {
         <MetricCard
           label="On-Time Delivery"
           :value="onTimeRate.toFixed(1) + '%'"
-          :description="kpiDescription(onTimeRate, 'onTimeRate', 'Full year average')"
+          :trend="trendInfo(onTimeRate, 'onTimeRate')"
+          :fallback-text="noTrendFallback('Full year average')"
         />
       </v-col>
 
       <v-col cols="12" sm="6" lg="3">
         <MetricCard
-          label="Open Exceptions"
+          label="Exception Events"
           :value="formatNumber(openExceptions)"
-          :description="kpiDescription(openExceptions, 'exceptions', 'Full year total', true)"
+          :trend="trendInfo(openExceptions, 'exceptions', true)"
+          :fallback-text="noTrendFallback('Full year total')"
         />
       </v-col>
 
@@ -330,7 +345,8 @@ const regionIcons: Record<string, string> = {
         <MetricCard
           label="Avg. Transit Days"
           :value="avgTransitDays.toFixed(1)"
-          :description="kpiDescription(avgTransitDays, 'avgTransitDays', 'Full year average', true)"
+          :trend="trendInfo(avgTransitDays, 'avgTransitDays', true)"
+          :fallback-text="noTrendFallback('Full year average')"
         />
       </v-col>
     </v-row>
@@ -365,6 +381,7 @@ const regionIcons: Record<string, string> = {
     <v-row class="mb-2">
       <v-col v-for="rd in regionalData" :key="rd.region" cols="12" sm="6" lg="3">
         <PerformanceCard
+          v-if="rd.hasData"
           :title="rd.region"
           :icon="regionIcons[rd.region] ?? 'mdi-map-marker'"
           :status="{ color: statusColor(rd.onTimeRate), label: statusLabel(rd.onTimeRate) }"
@@ -374,13 +391,26 @@ const regionIcons: Record<string, string> = {
           :avg-transit-days="rd.avgTransitDays.toFixed(1) + ' days'"
           :revenue="formatCurrency(rd.revenue)"
         />
+        <v-card
+          v-else
+          class="glass-card pa-4 d-flex flex-column align-center justify-center text-center"
+          rounded="lg"
+          style="min-height: 220px"
+        >
+          <v-icon icon="mdi-database-off-outline" size="32" class="mb-2 text-medium-emphasis" />
+          <div class="text-subtitle-1 font-weight-bold">{{ rd.region }}</div>
+          <div class="text-caption text-medium-emphasis">No data for this period</div>
+        </v-card>
       </v-col>
     </v-row>
 
     <div style="height: 24px"></div>
 
     <!-- Exceptions Table -->
-    <div class="text-h5 font-weight-bold mb-10">Open Exceptions</div>
+    <div class="text-h5 font-weight-bold mb-1">Open Exceptions</div>
+    <div class="text-caption text-medium-emphasis mb-9">
+      Currently unresolved shipment events — older exceptions are resolved and roll off this list, so months further in the past may show none.
+    </div>
     <v-card class="glass-card" rounded="lg">
       <v-data-table
         :headers="exceptionHeaders"
@@ -407,6 +437,7 @@ const regionIcons: Record<string, string> = {
         </template>
       </v-data-table>
     </v-card>
+    </template>
   </v-container>
 </template>
 
