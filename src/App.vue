@@ -18,12 +18,17 @@ function logout() {
   isAuthenticated.value = false
 }
 
+const CURRENT_YEAR = '2025'
+
 const monthOptions = [
   { title: 'All Months', value: 'all' },
-  ...metricsData.months.map((m) => ({ title: m.label, value: m.month })),
+  ...metricsData.months
+    .filter((m) => m.month.startsWith(CURRENT_YEAR))
+    .map((m) => ({ title: m.label, value: m.month })),
 ]
 
 const selectedMonth = ref('all')
+const compareYoY = ref(false)
 </script>
 
 <template>
@@ -43,6 +48,13 @@ const selectedMonth = ref('all')
       </v-app-bar-title>
 
       <template v-slot:append>
+        <v-checkbox
+          v-model="compareYoY"
+          label="Compare to last year"
+          density="compact"
+          hide-details
+          class="mr-2 flex-grow-0 d-none d-md-flex"
+        />
         <v-select
           v-model="selectedMonth"
           :items="monthOptions"
@@ -69,7 +81,7 @@ const selectedMonth = ref('all')
     </v-app-bar>
 
     <v-main>
-      <RouterView :selected-month="selectedMonth" />
+      <RouterView :selected-month="selectedMonth" :compare-yo-y="compareYoY" />
     </v-main>
     </template>
   </v-app>

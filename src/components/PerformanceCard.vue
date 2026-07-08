@@ -6,17 +6,27 @@ defineProps<{
     color: string
     label: string
   }
+  projection?: {
+    color: string
+    label: string
+  } | null
   shipments: string
   onTimeRate: string
   exceptions: string | number
   avgTransitDays: string
   revenue: string
 }>()
+
+function statusIcon(label: string, outline: boolean) {
+  if (label === 'On Target') return outline ? 'mdi-check-circle-outline' : 'mdi-check-circle'
+  if (label === 'At Risk') return outline ? 'mdi-alert-outline' : 'mdi-alert'
+  return outline ? 'mdi-close-circle-outline' : 'mdi-close-circle'
+}
 </script>
 
 <template>
   <v-card class="glass-card pa-4" rounded="lg">
-    <div class="d-flex align-center justify-space-between mb-6" style="min-height: 48px">
+    <div class="d-flex align-center justify-space-between" style="min-height: 48px">
       <span class="text-subtitle-1 font-weight-bold" style="line-height: 2">{{ title }}</span>
       <v-chip
         size="x-small"
@@ -24,10 +34,18 @@ defineProps<{
         variant="flat"
         class="font-weight-medium"
       >
-        <v-icon start size="12" class="mr-1" :icon="status.label === 'On Target' ? 'mdi-check-circle' : status.label === 'At Risk' ? 'mdi-alert' : 'mdi-close-circle'" />
+        <v-icon start size="12" class="mr-1" :icon="statusIcon(status.label, false)" />
         {{ status.label }}
       </v-chip>
     </div>
+
+    <div v-if="projection" class="d-flex justify-end mb-2">
+      <v-chip size="x-small" :color="projection.color" variant="outlined" class="font-weight-medium">
+        <v-icon start size="10" class="mr-1" :icon="statusIcon(projection.label, true)" />
+        Projected: {{ projection.label }}
+      </v-chip>
+    </div>
+    <div v-else style="height: 24px" class="mb-2"></div>
 
     <v-row dense>
       <v-col cols="6">

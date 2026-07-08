@@ -1,55 +1,1600 @@
 {
   "months": [
     {
+      "month": "2024-01",
+      "label": "January",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1012,
+          "onTimeRate": 84.7,
+          "exceptions": 48,
+          "exceptionsByType": {
+            "Weather Delay": 16,
+            "Carrier No-Show": 8,
+            "Damaged Freight": 6,
+            "Customs Hold": 5,
+            "Equipment Failure": 7,
+            "Missed Connection": 6
+          },
+          "avgTransitDays": 5.4,
+          "revenue": 2562840,
+          "byMode": {
+            "TL": {
+              "shipments": 506,
+              "revenue": 1383480
+            },
+            "LTL": {
+              "shipments": 355,
+              "revenue": 795870
+            },
+            "Expedited": {
+              "shipments": 151,
+              "revenue": 383490
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 888,
+          "onTimeRate": 87.0,
+          "exceptions": 31,
+          "exceptionsByType": {
+            "Weather Delay": 10,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 4,
+            "Customs Hold": 3,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.9,
+          "revenue": 2171250,
+          "byMode": {
+            "TL": {
+              "shipments": 452,
+              "revenue": 1194660
+            },
+            "LTL": {
+              "shipments": 298,
+              "revenue": 661320
+            },
+            "Expedited": {
+              "shipments": 138,
+              "revenue": 315270
+            }
+          }
+        },
+        "Central": {
+          "shipments": 948,
+          "onTimeRate": 86.3,
+          "exceptions": 39,
+          "exceptionsByType": {
+            "Weather Delay": 13,
+            "Carrier No-Show": 6,
+            "Damaged Freight": 5,
+            "Customs Hold": 5,
+            "Equipment Failure": 6,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 5.2,
+          "revenue": 2386080,
+          "byMode": {
+            "TL": {
+              "shipments": 493,
+              "revenue": 1307340
+            },
+            "LTL": {
+              "shipments": 313,
+              "revenue": 722160
+            },
+            "Expedited": {
+              "shipments": 142,
+              "revenue": 356580
+            }
+          }
+        },
+        "West": {
+          "shipments": 1090,
+          "onTimeRate": 83.9,
+          "exceptions": 53,
+          "exceptionsByType": {
+            "Weather Delay": 17,
+            "Carrier No-Show": 9,
+            "Damaged Freight": 6,
+            "Customs Hold": 7,
+            "Equipment Failure": 8,
+            "Missed Connection": 6
+          },
+          "avgTransitDays": 5.7,
+          "revenue": 2794230,
+          "byMode": {
+            "TL": {
+              "shipments": 555,
+              "revenue": 1524780
+            },
+            "LTL": {
+              "shipments": 362,
+              "revenue": 831150
+            },
+            "Expedited": {
+              "shipments": 173,
+              "revenue": 438300
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-02",
+      "label": "February",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 985,
+          "onTimeRate": 84.4,
+          "exceptions": 51,
+          "exceptionsByType": {
+            "Weather Delay": 17,
+            "Carrier No-Show": 8,
+            "Damaged Freight": 6,
+            "Customs Hold": 6,
+            "Equipment Failure": 8,
+            "Missed Connection": 6
+          },
+          "avgTransitDays": 5.5,
+          "revenue": 2499621,
+          "byMode": {
+            "TL": {
+              "shipments": 487,
+              "revenue": 1345331
+            },
+            "LTL": {
+              "shipments": 345,
+              "revenue": 780080
+            },
+            "Expedited": {
+              "shipments": 153,
+              "revenue": 374210
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 917,
+          "onTimeRate": 87.8,
+          "exceptions": 26,
+          "exceptionsByType": {
+            "Weather Delay": 10,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.8,
+          "revenue": 2251595,
+          "byMode": {
+            "TL": {
+              "shipments": 471,
+              "revenue": 1241127
+            },
+            "LTL": {
+              "shipments": 307,
+              "revenue": 681666
+            },
+            "Expedited": {
+              "shipments": 139,
+              "revenue": 328802
+            }
+          }
+        },
+        "Central": {
+          "shipments": 975,
+          "onTimeRate": 87.0,
+          "exceptions": 36,
+          "exceptionsByType": {
+            "Weather Delay": 13,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 5,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 5.1,
+          "revenue": 2455660,
+          "byMode": {
+            "TL": {
+              "shipments": 505,
+              "revenue": 1340627
+            },
+            "LTL": {
+              "shipments": 326,
+              "revenue": 751858
+            },
+            "Expedited": {
+              "shipments": 144,
+              "revenue": 363175
+            }
+          }
+        },
+        "West": {
+          "shipments": 1084,
+          "onTimeRate": 84.8,
+          "exceptions": 48,
+          "exceptionsByType": {
+            "Weather Delay": 15,
+            "Carrier No-Show": 8,
+            "Damaged Freight": 6,
+            "Customs Hold": 6,
+            "Equipment Failure": 7,
+            "Missed Connection": 6
+          },
+          "avgTransitDays": 5.6,
+          "revenue": 2769809,
+          "byMode": {
+            "TL": {
+              "shipments": 547,
+              "revenue": 1500008
+            },
+            "LTL": {
+              "shipments": 360,
+              "revenue": 827388
+            },
+            "Expedited": {
+              "shipments": 177,
+              "revenue": 442413
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-03",
+      "label": "March",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1061,
+          "onTimeRate": 87.4,
+          "exceptions": 34,
+          "exceptionsByType": {
+            "Weather Delay": 5,
+            "Carrier No-Show": 7,
+            "Damaged Freight": 5,
+            "Customs Hold": 5,
+            "Equipment Failure": 7,
+            "Missed Connection": 5
+          },
+          "avgTransitDays": 5.1,
+          "revenue": 2689364,
+          "byMode": {
+            "TL": {
+              "shipments": 531,
+              "revenue": 1455636
+            },
+            "LTL": {
+              "shipments": 371,
+              "revenue": 834364
+            },
+            "Expedited": {
+              "shipments": 159,
+              "revenue": 399364
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 947,
+          "onTimeRate": 89.7,
+          "exceptions": 22,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 5,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.6,
+          "revenue": 2334000,
+          "byMode": {
+            "TL": {
+              "shipments": 488,
+              "revenue": 1287454
+            },
+            "LTL": {
+              "shipments": 316,
+              "revenue": 708091
+            },
+            "Expedited": {
+              "shipments": 143,
+              "revenue": 338455
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1011,
+          "onTimeRate": 88.6,
+          "exceptions": 29,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 6,
+            "Damaged Freight": 5,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 5
+          },
+          "avgTransitDays": 4.9,
+          "revenue": 2548636,
+          "byMode": {
+            "TL": {
+              "shipments": 526,
+              "revenue": 1395181
+            },
+            "LTL": {
+              "shipments": 336,
+              "revenue": 780182
+            },
+            "Expedited": {
+              "shipments": 149,
+              "revenue": 373273
+            }
+          }
+        },
+        "West": {
+          "shipments": 1130,
+          "onTimeRate": 86.2,
+          "exceptions": 41,
+          "exceptionsByType": {
+            "Weather Delay": 6,
+            "Carrier No-Show": 8,
+            "Damaged Freight": 7,
+            "Customs Hold": 6,
+            "Equipment Failure": 8,
+            "Missed Connection": 6
+          },
+          "avgTransitDays": 5.3,
+          "revenue": 2897818,
+          "byMode": {
+            "TL": {
+              "shipments": 576,
+              "revenue": 1585000
+            },
+            "LTL": {
+              "shipments": 376,
+              "revenue": 861909
+            },
+            "Expedited": {
+              "shipments": 178,
+              "revenue": 450909
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-04",
+      "label": "April",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1101,
+          "onTimeRate": 89.3,
+          "exceptions": 26,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 4,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.9,
+          "revenue": 2790428,
+          "byMode": {
+            "TL": {
+              "shipments": 555,
+              "revenue": 1519195
+            },
+            "LTL": {
+              "shipments": 382,
+              "revenue": 857356
+            },
+            "Expedited": {
+              "shipments": 164,
+              "revenue": 413877
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 985,
+          "onTimeRate": 91.0,
+          "exceptions": 17,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.4,
+          "revenue": 2440597,
+          "byMode": {
+            "TL": {
+              "shipments": 508,
+              "revenue": 1344690
+            },
+            "LTL": {
+              "shipments": 330,
+              "revenue": 741142
+            },
+            "Expedited": {
+              "shipments": 147,
+              "revenue": 354765
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1049,
+          "onTimeRate": 90.1,
+          "exceptions": 23,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 3,
+            "Customs Hold": 4,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.7,
+          "revenue": 2646896,
+          "byMode": {
+            "TL": {
+              "shipments": 547,
+              "revenue": 1454875
+            },
+            "LTL": {
+              "shipments": 348,
+              "revenue": 805462
+            },
+            "Expedited": {
+              "shipments": 154,
+              "revenue": 386559
+            }
+          }
+        },
+        "West": {
+          "shipments": 1169,
+          "onTimeRate": 87.8,
+          "exceptions": 32,
+          "exceptionsByType": {
+            "Weather Delay": 5,
+            "Carrier No-Show": 6,
+            "Damaged Freight": 5,
+            "Customs Hold": 5,
+            "Equipment Failure": 6,
+            "Missed Connection": 5
+          },
+          "avgTransitDays": 5.1,
+          "revenue": 3009335,
+          "byMode": {
+            "TL": {
+              "shipments": 597,
+              "revenue": 1646738
+            },
+            "LTL": {
+              "shipments": 390,
+              "revenue": 897282
+            },
+            "Expedited": {
+              "shipments": 182,
+              "revenue": 465315
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-05",
+      "label": "May",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1146,
+          "onTimeRate": 90.7,
+          "exceptions": 21,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.8,
+          "revenue": 2908616,
+          "byMode": {
+            "TL": {
+              "shipments": 579,
+              "revenue": 1583496
+            },
+            "LTL": {
+              "shipments": 397,
+              "revenue": 894493
+            },
+            "Expedited": {
+              "shipments": 170,
+              "revenue": 430627
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1013,
+          "onTimeRate": 92.0,
+          "exceptions": 15,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.3,
+          "revenue": 2514808,
+          "byMode": {
+            "TL": {
+              "shipments": 524,
+              "revenue": 1388566
+            },
+            "LTL": {
+              "shipments": 339,
+              "revenue": 764111
+            },
+            "Expedited": {
+              "shipments": 150,
+              "revenue": 362131
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1086,
+          "onTimeRate": 91.1,
+          "exceptions": 19,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.6,
+          "revenue": 2740038,
+          "byMode": {
+            "TL": {
+              "shipments": 564,
+              "revenue": 1503523
+            },
+            "LTL": {
+              "shipments": 361,
+              "revenue": 837657
+            },
+            "Expedited": {
+              "shipments": 161,
+              "revenue": 398858
+            }
+          }
+        },
+        "West": {
+          "shipments": 1205,
+          "onTimeRate": 88.8,
+          "exceptions": 28,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 5,
+            "Customs Hold": 4,
+            "Equipment Failure": 6,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 5.0,
+          "revenue": 3104556,
+          "byMode": {
+            "TL": {
+              "shipments": 617,
+              "revenue": 1704788
+            },
+            "LTL": {
+              "shipments": 401,
+              "revenue": 922589
+            },
+            "Expedited": {
+              "shipments": 187,
+              "revenue": 477179
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-06",
+      "label": "June",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1191,
+          "onTimeRate": 91.7,
+          "exceptions": 17,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 2,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.6,
+          "revenue": 3025992,
+          "byMode": {
+            "TL": {
+              "shipments": 602,
+              "revenue": 1649467
+            },
+            "LTL": {
+              "shipments": 412,
+              "revenue": 930202
+            },
+            "Expedited": {
+              "shipments": 177,
+              "revenue": 446323
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1044,
+          "onTimeRate": 92.8,
+          "exceptions": 12,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.2,
+          "revenue": 2603475,
+          "byMode": {
+            "TL": {
+              "shipments": 542,
+              "revenue": 1440562
+            },
+            "LTL": {
+              "shipments": 349,
+              "revenue": 788655
+            },
+            "Expedited": {
+              "shipments": 153,
+              "revenue": 374258
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1123,
+          "onTimeRate": 92.0,
+          "exceptions": 16,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.5,
+          "revenue": 2840985,
+          "byMode": {
+            "TL": {
+              "shipments": 584,
+              "revenue": 1560609
+            },
+            "LTL": {
+              "shipments": 374,
+              "revenue": 869024
+            },
+            "Expedited": {
+              "shipments": 165,
+              "revenue": 411352
+            }
+          }
+        },
+        "West": {
+          "shipments": 1244,
+          "onTimeRate": 90.4,
+          "exceptions": 23,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 4,
+            "Customs Hold": 3,
+            "Equipment Failure": 5,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.8,
+          "revenue": 3210260,
+          "byMode": {
+            "TL": {
+              "shipments": 638,
+              "revenue": 1764623
+            },
+            "LTL": {
+              "shipments": 414,
+              "revenue": 951793
+            },
+            "Expedited": {
+              "shipments": 192,
+              "revenue": 493844
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-07",
+      "label": "July",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1222,
+          "onTimeRate": 91.6,
+          "exceptions": 19,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.6,
+          "revenue": 3108311,
+          "byMode": {
+            "TL": {
+              "shipments": 616,
+              "revenue": 1689398
+            },
+            "LTL": {
+              "shipments": 423,
+              "revenue": 959357
+            },
+            "Expedited": {
+              "shipments": 183,
+              "revenue": 459556
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1018,
+          "onTimeRate": 92.2,
+          "exceptions": 15,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.2,
+          "revenue": 2543138,
+          "byMode": {
+            "TL": {
+              "shipments": 527,
+              "revenue": 1394711
+            },
+            "LTL": {
+              "shipments": 340,
+              "revenue": 775385
+            },
+            "Expedited": {
+              "shipments": 151,
+              "revenue": 373042
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1109,
+          "onTimeRate": 91.0,
+          "exceptions": 21,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.5,
+          "revenue": 2804815,
+          "byMode": {
+            "TL": {
+              "shipments": 576,
+              "revenue": 1537789
+            },
+            "LTL": {
+              "shipments": 370,
+              "revenue": 859397
+            },
+            "Expedited": {
+              "shipments": 163,
+              "revenue": 407629
+            }
+          }
+        },
+        "West": {
+          "shipments": 1268,
+          "onTimeRate": 90.1,
+          "exceptions": 26,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 4,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.8,
+          "revenue": 3274571,
+          "byMode": {
+            "TL": {
+              "shipments": 650,
+              "revenue": 1802804
+            },
+            "LTL": {
+              "shipments": 422,
+              "revenue": 970020
+            },
+            "Expedited": {
+              "shipments": 196,
+              "revenue": 501747
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-08",
+      "label": "August",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1250,
+          "onTimeRate": 92.5,
+          "exceptions": 15,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.4,
+          "revenue": 3180948,
+          "byMode": {
+            "TL": {
+              "shipments": 632,
+              "revenue": 1729828
+            },
+            "LTL": {
+              "shipments": 431,
+              "revenue": 981018
+            },
+            "Expedited": {
+              "shipments": 187,
+              "revenue": 470102
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1069,
+          "onTimeRate": 93.9,
+          "exceptions": 10,
+          "exceptionsByType": {
+            "Weather Delay": 1,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 1,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.0,
+          "revenue": 2671802,
+          "byMode": {
+            "TL": {
+              "shipments": 554,
+              "revenue": 1474788
+            },
+            "LTL": {
+              "shipments": 358,
+              "revenue": 811800
+            },
+            "Expedited": {
+              "shipments": 157,
+              "revenue": 385214
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1150,
+          "onTimeRate": 92.9,
+          "exceptions": 14,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.3,
+          "revenue": 2913330,
+          "byMode": {
+            "TL": {
+              "shipments": 598,
+              "revenue": 1601144
+            },
+            "LTL": {
+              "shipments": 384,
+              "revenue": 893334
+            },
+            "Expedited": {
+              "shipments": 168,
+              "revenue": 418852
+            }
+          }
+        },
+        "West": {
+          "shipments": 1296,
+          "onTimeRate": 91.2,
+          "exceptions": 21,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.6,
+          "revenue": 3352868,
+          "byMode": {
+            "TL": {
+              "shipments": 665,
+              "revenue": 1846491
+            },
+            "LTL": {
+              "shipments": 431,
+              "revenue": 992107
+            },
+            "Expedited": {
+              "shipments": 200,
+              "revenue": 514270
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-09",
+      "label": "September",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1291,
+          "onTimeRate": 92.2,
+          "exceptions": 17,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.5,
+          "revenue": 3284389,
+          "byMode": {
+            "TL": {
+              "shipments": 652,
+              "revenue": 1787050
+            },
+            "LTL": {
+              "shipments": 446,
+              "revenue": 1013426
+            },
+            "Expedited": {
+              "shipments": 193,
+              "revenue": 483913
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1088,
+          "onTimeRate": 93.0,
+          "exceptions": 12,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.1,
+          "revenue": 2719949,
+          "byMode": {
+            "TL": {
+              "shipments": 564,
+              "revenue": 1500429
+            },
+            "LTL": {
+              "shipments": 364,
+              "revenue": 826903
+            },
+            "Expedited": {
+              "shipments": 160,
+              "revenue": 392617
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1181,
+          "onTimeRate": 92.5,
+          "exceptions": 16,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.2,
+          "revenue": 2992993,
+          "byMode": {
+            "TL": {
+              "shipments": 615,
+              "revenue": 1645004
+            },
+            "LTL": {
+              "shipments": 394,
+              "revenue": 915951
+            },
+            "Expedited": {
+              "shipments": 172,
+              "revenue": 432038
+            }
+          }
+        },
+        "West": {
+          "shipments": 1318,
+          "onTimeRate": 90.8,
+          "exceptions": 24,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 4,
+            "Customs Hold": 3,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.7,
+          "revenue": 3411079,
+          "byMode": {
+            "TL": {
+              "shipments": 677,
+              "revenue": 1878626
+            },
+            "LTL": {
+              "shipments": 439,
+              "revenue": 1010711
+            },
+            "Expedited": {
+              "shipments": 202,
+              "revenue": 521742
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-10",
+      "label": "October",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1329,
+          "onTimeRate": 91.1,
+          "exceptions": 22,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 4,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.6,
+          "revenue": 3385767,
+          "byMode": {
+            "TL": {
+              "shipments": 672,
+              "revenue": 1846722
+            },
+            "LTL": {
+              "shipments": 459,
+              "revenue": 1042715
+            },
+            "Expedited": {
+              "shipments": 198,
+              "revenue": 496330
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1119,
+          "onTimeRate": 92.4,
+          "exceptions": 16,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.2,
+          "revenue": 2802592,
+          "byMode": {
+            "TL": {
+              "shipments": 580,
+              "revenue": 1545537
+            },
+            "LTL": {
+              "shipments": 374,
+              "revenue": 852746
+            },
+            "Expedited": {
+              "shipments": 165,
+              "revenue": 404309
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1211,
+          "onTimeRate": 91.9,
+          "exceptions": 18,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.3,
+          "revenue": 3071221,
+          "byMode": {
+            "TL": {
+              "shipments": 629,
+              "revenue": 1688555
+            },
+            "LTL": {
+              "shipments": 405,
+              "revenue": 939404
+            },
+            "Expedited": {
+              "shipments": 177,
+              "revenue": 443262
+            }
+          }
+        },
+        "West": {
+          "shipments": 1349,
+          "onTimeRate": 90.2,
+          "exceptions": 27,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 5,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.7,
+          "revenue": 3494819,
+          "byMode": {
+            "TL": {
+              "shipments": 692,
+              "revenue": 1926135
+            },
+            "LTL": {
+              "shipments": 450,
+              "revenue": 1035188
+            },
+            "Expedited": {
+              "shipments": 207,
+              "revenue": 533496
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-11",
+      "label": "November",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1387,
+          "onTimeRate": 89.6,
+          "exceptions": 32,
+          "exceptionsByType": {
+            "Weather Delay": 12,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 4,
+            "Customs Hold": 4,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.7,
+          "revenue": 3534204,
+          "byMode": {
+            "TL": {
+              "shipments": 702,
+              "revenue": 1929957
+            },
+            "LTL": {
+              "shipments": 479,
+              "revenue": 1085949
+            },
+            "Expedited": {
+              "shipments": 206,
+              "revenue": 518298
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1148,
+          "onTimeRate": 91.2,
+          "exceptions": 20,
+          "exceptionsByType": {
+            "Weather Delay": 7,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
+          "avgTransitDays": 4.2,
+          "revenue": 2880989,
+          "byMode": {
+            "TL": {
+              "shipments": 596,
+              "revenue": 1591011
+            },
+            "LTL": {
+              "shipments": 385,
+              "revenue": 875585
+            },
+            "Expedited": {
+              "shipments": 167,
+              "revenue": 414393
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1252,
+          "onTimeRate": 90.7,
+          "exceptions": 24,
+          "exceptionsByType": {
+            "Weather Delay": 9,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.4,
+          "revenue": 3184102,
+          "byMode": {
+            "TL": {
+              "shipments": 651,
+              "revenue": 1750226
+            },
+            "LTL": {
+              "shipments": 419,
+              "revenue": 972589
+            },
+            "Expedited": {
+              "shipments": 182,
+              "revenue": 461287
+            }
+          }
+        },
+        "West": {
+          "shipments": 1392,
+          "onTimeRate": 89.1,
+          "exceptions": 31,
+          "exceptionsByType": {
+            "Weather Delay": 11,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 4,
+            "Customs Hold": 4,
+            "Equipment Failure": 4,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.8,
+          "revenue": 3604451,
+          "byMode": {
+            "TL": {
+              "shipments": 715,
+              "revenue": 1987913
+            },
+            "LTL": {
+              "shipments": 464,
+              "revenue": 1067134
+            },
+            "Expedited": {
+              "shipments": 213,
+              "revenue": 549404
+            }
+          }
+        }
+      }
+    },
+    {
+      "month": "2024-12",
+      "label": "December",
+      "monthStatus": "actual",
+      "regions": {
+        "Northeast": {
+          "shipments": 1428,
+          "onTimeRate": 88.1,
+          "exceptions": 39,
+          "exceptionsByType": {
+            "Weather Delay": 15,
+            "Carrier No-Show": 6,
+            "Damaged Freight": 4,
+            "Customs Hold": 5,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.8,
+          "revenue": 3642965,
+          "byMode": {
+            "TL": {
+              "shipments": 723,
+              "revenue": 1989870
+            },
+            "LTL": {
+              "shipments": 493,
+              "revenue": 1117960
+            },
+            "Expedited": {
+              "shipments": 212,
+              "revenue": 535135
+            }
+          }
+        },
+        "Southeast": {
+          "shipments": 1176,
+          "onTimeRate": 90.6,
+          "exceptions": 22,
+          "exceptionsByType": {
+            "Weather Delay": 8,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.3,
+          "revenue": 2956780,
+          "byMode": {
+            "TL": {
+              "shipments": 611,
+              "revenue": 1630865
+            },
+            "LTL": {
+              "shipments": 393,
+              "revenue": 897560
+            },
+            "Expedited": {
+              "shipments": 172,
+              "revenue": 428355
+            }
+          }
+        },
+        "Central": {
+          "shipments": 1288,
+          "onTimeRate": 89.7,
+          "exceptions": 28,
+          "exceptionsByType": {
+            "Weather Delay": 10,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 4,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
+          "avgTransitDays": 4.5,
+          "revenue": 3276455,
+          "byMode": {
+            "TL": {
+              "shipments": 670,
+              "revenue": 1801485
+            },
+            "LTL": {
+              "shipments": 431,
+              "revenue": 1001395
+            },
+            "Expedited": {
+              "shipments": 187,
+              "revenue": 473575
+            }
+          }
+        },
+        "West": {
+          "shipments": 1426,
+          "onTimeRate": 88.4,
+          "exceptions": 37,
+          "exceptionsByType": {
+            "Weather Delay": 12,
+            "Carrier No-Show": 6,
+            "Damaged Freight": 5,
+            "Customs Hold": 4,
+            "Equipment Failure": 6,
+            "Missed Connection": 4
+          },
+          "avgTransitDays": 4.9,
+          "revenue": 3696640,
+          "byMode": {
+            "TL": {
+              "shipments": 732,
+              "revenue": 2041265
+            },
+            "LTL": {
+              "shipments": 476,
+              "revenue": 1093830
+            },
+            "Expedited": {
+              "shipments": 218,
+              "revenue": 561545
+            }
+          }
+        }
+      }
+    },
+    {
       "month": "2025-01",
       "label": "January",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1124,
           "onTimeRate": 89.2,
           "exceptions": 34,
+          "exceptionsByType": {
+            "Weather Delay": 11,
+            "Carrier No-Show": 6,
+            "Damaged Freight": 4,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
           "avgTransitDays": 4.8,
           "revenue": 2847600,
           "byMode": {
-            "TL": { "shipments": 562, "revenue": 1537200 },
-            "LTL": { "shipments": 394, "revenue": 884300 },
-            "Expedited": { "shipments": 168, "revenue": 426100 }
+            "TL": {
+              "shipments": 562,
+              "revenue": 1537200
+            },
+            "LTL": {
+              "shipments": 394,
+              "revenue": 884300
+            },
+            "Expedited": {
+              "shipments": 168,
+              "revenue": 426100
+            }
           }
         },
         "Southeast": {
           "shipments": 987,
           "onTimeRate": 91.5,
           "exceptions": 22,
+          "exceptionsByType": {
+            "Weather Delay": 8,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.3,
           "revenue": 2412500,
           "byMode": {
-            "TL": { "shipments": 503, "revenue": 1327400 },
-            "LTL": { "shipments": 331, "revenue": 734800 },
-            "Expedited": { "shipments": 153, "revenue": 350300 }
+            "TL": {
+              "shipments": 503,
+              "revenue": 1327400
+            },
+            "LTL": {
+              "shipments": 331,
+              "revenue": 734800
+            },
+            "Expedited": {
+              "shipments": 153,
+              "revenue": 350300
+            }
           }
         },
         "Central": {
           "shipments": 1053,
           "onTimeRate": 90.8,
           "exceptions": 28,
+          "exceptionsByType": {
+            "Weather Delay": 10,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 4,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.6,
           "revenue": 2651200,
           "byMode": {
-            "TL": { "shipments": 548, "revenue": 1452600 },
-            "LTL": { "shipments": 347, "revenue": 802400 },
-            "Expedited": { "shipments": 158, "revenue": 396200 }
+            "TL": {
+              "shipments": 548,
+              "revenue": 1452600
+            },
+            "LTL": {
+              "shipments": 347,
+              "revenue": 802400
+            },
+            "Expedited": {
+              "shipments": 158,
+              "revenue": 396200
+            }
           }
         },
         "West": {
           "shipments": 1211,
           "onTimeRate": 88.4,
           "exceptions": 38,
+          "exceptionsByType": {
+            "Weather Delay": 13,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 5,
+            "Customs Hold": 5,
+            "Equipment Failure": 5,
+            "Missed Connection": 5
+          },
           "avgTransitDays": 5.1,
           "revenue": 3104700,
           "byMode": {
-            "TL": { "shipments": 617, "revenue": 1694200 },
-            "LTL": { "shipments": 402, "revenue": 923500 },
-            "Expedited": { "shipments": 192, "revenue": 487000 }
+            "TL": {
+              "shipments": 617,
+              "revenue": 1694200
+            },
+            "LTL": {
+              "shipments": 402,
+              "revenue": 923500
+            },
+            "Expedited": {
+              "shipments": 192,
+              "revenue": 487000
+            }
           }
         }
       }
@@ -57,53 +1602,122 @@
     {
       "month": "2025-02",
       "label": "February",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1089,
           "onTimeRate": 88.7,
           "exceptions": 37,
+          "exceptionsByType": {
+            "Weather Delay": 13,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 5,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 5
+          },
           "avgTransitDays": 4.9,
           "revenue": 2763400,
           "byMode": {
-            "TL": { "shipments": 538, "revenue": 1487300 },
-            "LTL": { "shipments": 382, "revenue": 862400 },
-            "Expedited": { "shipments": 169, "revenue": 413700 }
+            "TL": {
+              "shipments": 538,
+              "revenue": 1487300
+            },
+            "LTL": {
+              "shipments": 382,
+              "revenue": 862400
+            },
+            "Expedited": {
+              "shipments": 169,
+              "revenue": 413700
+            }
           }
         },
         "Southeast": {
           "shipments": 1014,
           "onTimeRate": 92.1,
           "exceptions": 19,
+          "exceptionsByType": {
+            "Weather Delay": 7,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.2,
           "revenue": 2489200,
           "byMode": {
-            "TL": { "shipments": 521, "revenue": 1372100 },
-            "LTL": { "shipments": 339, "revenue": 753600 },
-            "Expedited": { "shipments": 154, "revenue": 363500 }
+            "TL": {
+              "shipments": 521,
+              "revenue": 1372100
+            },
+            "LTL": {
+              "shipments": 339,
+              "revenue": 753600
+            },
+            "Expedited": {
+              "shipments": 154,
+              "revenue": 363500
+            }
           }
         },
         "Central": {
           "shipments": 1078,
           "onTimeRate": 91.3,
           "exceptions": 26,
+          "exceptionsByType": {
+            "Weather Delay": 9,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.5,
           "revenue": 2714800,
           "byMode": {
-            "TL": { "shipments": 559, "revenue": 1482100 },
-            "LTL": { "shipments": 360, "revenue": 831200 },
-            "Expedited": { "shipments": 159, "revenue": 401500 }
+            "TL": {
+              "shipments": 559,
+              "revenue": 1482100
+            },
+            "LTL": {
+              "shipments": 360,
+              "revenue": 831200
+            },
+            "Expedited": {
+              "shipments": 159,
+              "revenue": 401500
+            }
           }
         },
         "West": {
           "shipments": 1198,
           "onTimeRate": 89.1,
           "exceptions": 35,
+          "exceptionsByType": {
+            "Weather Delay": 12,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 5,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
           "avgTransitDays": 5.0,
           "revenue": 3062100,
           "byMode": {
-            "TL": { "shipments": 605, "revenue": 1658300 },
-            "LTL": { "shipments": 398, "revenue": 914700 },
-            "Expedited": { "shipments": 195, "revenue": 489100 }
+            "TL": {
+              "shipments": 605,
+              "revenue": 1658300
+            },
+            "LTL": {
+              "shipments": 398,
+              "revenue": 914700
+            },
+            "Expedited": {
+              "shipments": 195,
+              "revenue": 489100
+            }
           }
         }
       }
@@ -111,53 +1725,122 @@
     {
       "month": "2025-03",
       "label": "March",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1167,
           "onTimeRate": 91.4,
           "exceptions": 25,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 4,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 4
+          },
           "avgTransitDays": 4.6,
           "revenue": 2958300,
           "byMode": {
-            "TL": { "shipments": 584, "revenue": 1601200 },
-            "LTL": { "shipments": 408, "revenue": 917800 },
-            "Expedited": { "shipments": 175, "revenue": 439300 }
+            "TL": {
+              "shipments": 584,
+              "revenue": 1601200
+            },
+            "LTL": {
+              "shipments": 408,
+              "revenue": 917800
+            },
+            "Expedited": {
+              "shipments": 175,
+              "revenue": 439300
+            }
           }
         },
         "Southeast": {
           "shipments": 1042,
           "onTimeRate": 93.7,
           "exceptions": 16,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.1,
           "revenue": 2567400,
           "byMode": {
-            "TL": { "shipments": 537, "revenue": 1416200 },
-            "LTL": { "shipments": 348, "revenue": 778900 },
-            "Expedited": { "shipments": 157, "revenue": 372300 }
+            "TL": {
+              "shipments": 537,
+              "revenue": 1416200
+            },
+            "LTL": {
+              "shipments": 348,
+              "revenue": 778900
+            },
+            "Expedited": {
+              "shipments": 157,
+              "revenue": 372300
+            }
           }
         },
         "Central": {
           "shipments": 1112,
           "onTimeRate": 92.6,
           "exceptions": 21,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 4
+          },
           "avgTransitDays": 4.4,
           "revenue": 2803500,
           "byMode": {
-            "TL": { "shipments": 578, "revenue": 1534700 },
-            "LTL": { "shipments": 370, "revenue": 858200 },
-            "Expedited": { "shipments": 164, "revenue": 410600 }
+            "TL": {
+              "shipments": 578,
+              "revenue": 1534700
+            },
+            "LTL": {
+              "shipments": 370,
+              "revenue": 858200
+            },
+            "Expedited": {
+              "shipments": 164,
+              "revenue": 410600
+            }
           }
         },
         "West": {
           "shipments": 1243,
           "onTimeRate": 90.2,
           "exceptions": 30,
+          "exceptionsByType": {
+            "Weather Delay": 5,
+            "Carrier No-Show": 6,
+            "Damaged Freight": 4,
+            "Customs Hold": 4,
+            "Equipment Failure": 6,
+            "Missed Connection": 5
+          },
           "avgTransitDays": 4.8,
           "revenue": 3187600,
           "byMode": {
-            "TL": { "shipments": 634, "revenue": 1743500 },
-            "LTL": { "shipments": 413, "revenue": 948100 },
-            "Expedited": { "shipments": 196, "revenue": 496000 }
+            "TL": {
+              "shipments": 634,
+              "revenue": 1743500
+            },
+            "LTL": {
+              "shipments": 413,
+              "revenue": 948100
+            },
+            "Expedited": {
+              "shipments": 196,
+              "revenue": 496000
+            }
           }
         }
       }
@@ -165,53 +1848,122 @@
     {
       "month": "2025-04",
       "label": "April",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1205,
           "onTimeRate": 93.1,
           "exceptions": 19,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.4,
           "revenue": 3054200,
           "byMode": {
-            "TL": { "shipments": 607, "revenue": 1662800 },
-            "LTL": { "shipments": 418, "revenue": 938400 },
-            "Expedited": { "shipments": 180, "revenue": 453000 }
+            "TL": {
+              "shipments": 607,
+              "revenue": 1662800
+            },
+            "LTL": {
+              "shipments": 418,
+              "revenue": 938400
+            },
+            "Expedited": {
+              "shipments": 180,
+              "revenue": 453000
+            }
           }
         },
         "Southeast": {
           "shipments": 1078,
           "onTimeRate": 94.8,
           "exceptions": 13,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 3.9,
           "revenue": 2671300,
           "byMode": {
-            "TL": { "shipments": 556, "revenue": 1471800 },
-            "LTL": { "shipments": 361, "revenue": 811200 },
-            "Expedited": { "shipments": 161, "revenue": 388300 }
+            "TL": {
+              "shipments": 556,
+              "revenue": 1471800
+            },
+            "LTL": {
+              "shipments": 361,
+              "revenue": 811200
+            },
+            "Expedited": {
+              "shipments": 161,
+              "revenue": 388300
+            }
           }
         },
         "Central": {
           "shipments": 1148,
           "onTimeRate": 93.9,
           "exceptions": 17,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 2,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.2,
           "revenue": 2897100,
           "byMode": {
-            "TL": { "shipments": 598, "revenue": 1592400 },
-            "LTL": { "shipments": 381, "revenue": 881600 },
-            "Expedited": { "shipments": 169, "revenue": 423100 }
+            "TL": {
+              "shipments": 598,
+              "revenue": 1592400
+            },
+            "LTL": {
+              "shipments": 381,
+              "revenue": 881600
+            },
+            "Expedited": {
+              "shipments": 169,
+              "revenue": 423100
+            }
           }
         },
         "West": {
           "shipments": 1279,
           "onTimeRate": 91.6,
           "exceptions": 24,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 3,
+            "Customs Hold": 4,
+            "Equipment Failure": 5,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.6,
           "revenue": 3293800,
           "byMode": {
-            "TL": { "shipments": 653, "revenue": 1802400 },
-            "LTL": { "shipments": 427, "revenue": 982100 },
-            "Expedited": { "shipments": 199, "revenue": 509300 }
+            "TL": {
+              "shipments": 653,
+              "revenue": 1802400
+            },
+            "LTL": {
+              "shipments": 427,
+              "revenue": 982100
+            },
+            "Expedited": {
+              "shipments": 199,
+              "revenue": 509300
+            }
           }
         }
       }
@@ -219,53 +1971,122 @@
     {
       "month": "2025-05",
       "label": "May",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1248,
           "onTimeRate": 94.3,
           "exceptions": 16,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.3,
           "revenue": 3167800,
           "byMode": {
-            "TL": { "shipments": 631, "revenue": 1724600 },
-            "LTL": { "shipments": 432, "revenue": 974200 },
-            "Expedited": { "shipments": 185, "revenue": 469000 }
+            "TL": {
+              "shipments": 631,
+              "revenue": 1724600
+            },
+            "LTL": {
+              "shipments": 432,
+              "revenue": 974200
+            },
+            "Expedited": {
+              "shipments": 185,
+              "revenue": 469000
+            }
           }
         },
         "Southeast": {
           "shipments": 1103,
           "onTimeRate": 95.6,
           "exceptions": 11,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 1
+          },
           "avgTransitDays": 3.8,
           "revenue": 2738900,
           "byMode": {
-            "TL": { "shipments": 571, "revenue": 1512300 },
-            "LTL": { "shipments": 369, "revenue": 832200 },
-            "Expedited": { "shipments": 163, "revenue": 394400 }
+            "TL": {
+              "shipments": 571,
+              "revenue": 1512300
+            },
+            "LTL": {
+              "shipments": 369,
+              "revenue": 832200
+            },
+            "Expedited": {
+              "shipments": 163,
+              "revenue": 394400
+            }
           }
         },
         "Central": {
           "shipments": 1183,
           "onTimeRate": 94.7,
           "exceptions": 14,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.1,
           "revenue": 2984200,
           "byMode": {
-            "TL": { "shipments": 614, "revenue": 1637500 },
-            "LTL": { "shipments": 393, "revenue": 912300 },
-            "Expedited": { "shipments": 176, "revenue": 434400 }
+            "TL": {
+              "shipments": 614,
+              "revenue": 1637500
+            },
+            "LTL": {
+              "shipments": 393,
+              "revenue": 912300
+            },
+            "Expedited": {
+              "shipments": 176,
+              "revenue": 434400
+            }
           }
         },
         "West": {
           "shipments": 1312,
           "onTimeRate": 92.4,
           "exceptions": 21,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 4,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.5,
           "revenue": 3381200,
           "byMode": {
-            "TL": { "shipments": 672, "revenue": 1856700 },
-            "LTL": { "shipments": 437, "revenue": 1004800 },
-            "Expedited": { "shipments": 203, "revenue": 519700 }
+            "TL": {
+              "shipments": 672,
+              "revenue": 1856700
+            },
+            "LTL": {
+              "shipments": 437,
+              "revenue": 1004800
+            },
+            "Expedited": {
+              "shipments": 203,
+              "revenue": 519700
+            }
           }
         }
       }
@@ -273,53 +2094,122 @@
     {
       "month": "2025-06",
       "label": "June",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1291,
           "onTimeRate": 95.1,
           "exceptions": 13,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.1,
           "revenue": 3279400,
           "byMode": {
-            "TL": { "shipments": 652, "revenue": 1787600 },
-            "LTL": { "shipments": 447, "revenue": 1008100 },
-            "Expedited": { "shipments": 192, "revenue": 483700 }
+            "TL": {
+              "shipments": 652,
+              "revenue": 1787600
+            },
+            "LTL": {
+              "shipments": 447,
+              "revenue": 1008100
+            },
+            "Expedited": {
+              "shipments": 192,
+              "revenue": 483700
+            }
           }
         },
         "Southeast": {
           "shipments": 1131,
           "onTimeRate": 96.2,
           "exceptions": 9,
+          "exceptionsByType": {
+            "Weather Delay": 1,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 1,
+            "Equipment Failure": 2,
+            "Missed Connection": 1
+          },
           "avgTransitDays": 3.7,
           "revenue": 2821500,
           "byMode": {
-            "TL": { "shipments": 587, "revenue": 1561200 },
-            "LTL": { "shipments": 378, "revenue": 854700 },
-            "Expedited": { "shipments": 166, "revenue": 405600 }
+            "TL": {
+              "shipments": 587,
+              "revenue": 1561200
+            },
+            "LTL": {
+              "shipments": 378,
+              "revenue": 854700
+            },
+            "Expedited": {
+              "shipments": 166,
+              "revenue": 405600
+            }
           }
         },
         "Central": {
           "shipments": 1217,
           "onTimeRate": 95.4,
           "exceptions": 12,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.0,
           "revenue": 3078900,
           "byMode": {
-            "TL": { "shipments": 633, "revenue": 1691300 },
-            "LTL": { "shipments": 405, "revenue": 941800 },
-            "Expedited": { "shipments": 179, "revenue": 445800 }
+            "TL": {
+              "shipments": 633,
+              "revenue": 1691300
+            },
+            "LTL": {
+              "shipments": 405,
+              "revenue": 941800
+            },
+            "Expedited": {
+              "shipments": 179,
+              "revenue": 445800
+            }
           }
         },
         "West": {
           "shipments": 1348,
           "onTimeRate": 93.8,
           "exceptions": 18,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.3,
           "revenue": 3479100,
           "byMode": {
-            "TL": { "shipments": 691, "revenue": 1912400 },
-            "LTL": { "shipments": 449, "revenue": 1031500 },
-            "Expedited": { "shipments": 208, "revenue": 535200 }
+            "TL": {
+              "shipments": 691,
+              "revenue": 1912400
+            },
+            "LTL": {
+              "shipments": 449,
+              "revenue": 1031500
+            },
+            "Expedited": {
+              "shipments": 208,
+              "revenue": 535200
+            }
           }
         }
       }
@@ -327,53 +2217,122 @@
     {
       "month": "2025-07",
       "label": "July",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1318,
           "onTimeRate": 94.7,
           "exceptions": 15,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.2,
           "revenue": 3352100,
           "byMode": {
-            "TL": { "shipments": 665, "revenue": 1821900 },
-            "LTL": { "shipments": 456, "revenue": 1034600 },
-            "Expedited": { "shipments": 197, "revenue": 495600 }
+            "TL": {
+              "shipments": 665,
+              "revenue": 1821900
+            },
+            "LTL": {
+              "shipments": 456,
+              "revenue": 1034600
+            },
+            "Expedited": {
+              "shipments": 197,
+              "revenue": 495600
+            }
           }
         },
         "Southeast": {
           "shipments": 1098,
           "onTimeRate": 95.3,
           "exceptions": 12,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 3.8,
           "revenue": 2742600,
           "byMode": {
-            "TL": { "shipments": 568, "revenue": 1504100 },
-            "LTL": { "shipments": 367, "revenue": 836200 },
-            "Expedited": { "shipments": 163, "revenue": 402300 }
+            "TL": {
+              "shipments": 568,
+              "revenue": 1504100
+            },
+            "LTL": {
+              "shipments": 367,
+              "revenue": 836200
+            },
+            "Expedited": {
+              "shipments": 163,
+              "revenue": 402300
+            }
           }
         },
         "Central": {
           "shipments": 1196,
           "onTimeRate": 94.1,
           "exceptions": 16,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.1,
           "revenue": 3024800,
           "byMode": {
-            "TL": { "shipments": 621, "revenue": 1658400 },
-            "LTL": { "shipments": 399, "revenue": 926800 },
-            "Expedited": { "shipments": 176, "revenue": 439600 }
+            "TL": {
+              "shipments": 621,
+              "revenue": 1658400
+            },
+            "LTL": {
+              "shipments": 399,
+              "revenue": 926800
+            },
+            "Expedited": {
+              "shipments": 176,
+              "revenue": 439600
+            }
           }
         },
         "West": {
           "shipments": 1367,
           "onTimeRate": 93.2,
           "exceptions": 20,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.4,
           "revenue": 3531400,
           "byMode": {
-            "TL": { "shipments": 701, "revenue": 1944200 },
-            "LTL": { "shipments": 455, "revenue": 1046100 },
-            "Expedited": { "shipments": 211, "revenue": 541100 }
+            "TL": {
+              "shipments": 701,
+              "revenue": 1944200
+            },
+            "LTL": {
+              "shipments": 455,
+              "revenue": 1046100
+            },
+            "Expedited": {
+              "shipments": 211,
+              "revenue": 541100
+            }
           }
         }
       }
@@ -381,53 +2340,122 @@
     {
       "month": "2025-08",
       "label": "August",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1342,
           "onTimeRate": 95.4,
           "exceptions": 12,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.0,
           "revenue": 3413700,
           "byMode": {
-            "TL": { "shipments": 678, "revenue": 1856400 },
-            "LTL": { "shipments": 463, "revenue": 1052800 },
-            "Expedited": { "shipments": 201, "revenue": 504500 }
+            "TL": {
+              "shipments": 678,
+              "revenue": 1856400
+            },
+            "LTL": {
+              "shipments": 463,
+              "revenue": 1052800
+            },
+            "Expedited": {
+              "shipments": 201,
+              "revenue": 504500
+            }
           }
         },
         "Southeast": {
           "shipments": 1147,
           "onTimeRate": 96.8,
           "exceptions": 8,
+          "exceptionsByType": {
+            "Weather Delay": 1,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 1,
+            "Customs Hold": 1,
+            "Equipment Failure": 2,
+            "Missed Connection": 1
+          },
           "avgTransitDays": 3.6,
           "revenue": 2867300,
           "byMode": {
-            "TL": { "shipments": 594, "revenue": 1582700 },
-            "LTL": { "shipments": 384, "revenue": 871200 },
-            "Expedited": { "shipments": 169, "revenue": 413400 }
+            "TL": {
+              "shipments": 594,
+              "revenue": 1582700
+            },
+            "LTL": {
+              "shipments": 384,
+              "revenue": 871200
+            },
+            "Expedited": {
+              "shipments": 169,
+              "revenue": 413400
+            }
           }
         },
         "Central": {
           "shipments": 1234,
           "onTimeRate": 95.8,
           "exceptions": 11,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 1
+          },
           "avgTransitDays": 3.9,
           "revenue": 3126500,
           "byMode": {
-            "TL": { "shipments": 642, "revenue": 1718300 },
-            "LTL": { "shipments": 412, "revenue": 958700 },
-            "Expedited": { "shipments": 180, "revenue": 449500 }
+            "TL": {
+              "shipments": 642,
+              "revenue": 1718300
+            },
+            "LTL": {
+              "shipments": 412,
+              "revenue": 958700
+            },
+            "Expedited": {
+              "shipments": 180,
+              "revenue": 449500
+            }
           }
         },
         "West": {
           "shipments": 1391,
           "onTimeRate": 94.1,
           "exceptions": 17,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 4,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.2,
           "revenue": 3598200,
           "byMode": {
-            "TL": { "shipments": 714, "revenue": 1981600 },
-            "LTL": { "shipments": 463, "revenue": 1064700 },
-            "Expedited": { "shipments": 214, "revenue": 551900 }
+            "TL": {
+              "shipments": 714,
+              "revenue": 1981600
+            },
+            "LTL": {
+              "shipments": 463,
+              "revenue": 1064700
+            },
+            "Expedited": {
+              "shipments": 214,
+              "revenue": 551900
+            }
           }
         }
       }
@@ -435,53 +2463,122 @@
     {
       "month": "2025-09",
       "label": "September",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1379,
           "onTimeRate": 94.9,
           "exceptions": 14,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.1,
           "revenue": 3507600,
           "byMode": {
-            "TL": { "shipments": 697, "revenue": 1908500 },
-            "LTL": { "shipments": 476, "revenue": 1082300 },
-            "Expedited": { "shipments": 206, "revenue": 516800 }
+            "TL": {
+              "shipments": 697,
+              "revenue": 1908500
+            },
+            "LTL": {
+              "shipments": 476,
+              "revenue": 1082300
+            },
+            "Expedited": {
+              "shipments": 206,
+              "revenue": 516800
+            }
           }
         },
         "Southeast": {
           "shipments": 1162,
           "onTimeRate": 95.7,
           "exceptions": 10,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 1,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 1
+          },
           "avgTransitDays": 3.7,
           "revenue": 2904800,
           "byMode": {
-            "TL": { "shipments": 602, "revenue": 1602400 },
-            "LTL": { "shipments": 389, "revenue": 883100 },
-            "Expedited": { "shipments": 171, "revenue": 419300 }
+            "TL": {
+              "shipments": 602,
+              "revenue": 1602400
+            },
+            "LTL": {
+              "shipments": 389,
+              "revenue": 883100
+            },
+            "Expedited": {
+              "shipments": 171,
+              "revenue": 419300
+            }
           }
         },
         "Central": {
           "shipments": 1261,
           "onTimeRate": 95.2,
           "exceptions": 13,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 3.8,
           "revenue": 3196400,
           "byMode": {
-            "TL": { "shipments": 656, "revenue": 1756800 },
-            "LTL": { "shipments": 421, "revenue": 978200 },
-            "Expedited": { "shipments": 184, "revenue": 461400 }
+            "TL": {
+              "shipments": 656,
+              "revenue": 1756800
+            },
+            "LTL": {
+              "shipments": 421,
+              "revenue": 978200
+            },
+            "Expedited": {
+              "shipments": 184,
+              "revenue": 461400
+            }
           }
         },
         "West": {
           "shipments": 1408,
           "onTimeRate": 93.5,
           "exceptions": 19,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.3,
           "revenue": 3642900,
           "byMode": {
-            "TL": { "shipments": 723, "revenue": 2006300 },
-            "LTL": { "shipments": 469, "revenue": 1079400 },
-            "Expedited": { "shipments": 216, "revenue": 557200 }
+            "TL": {
+              "shipments": 723,
+              "revenue": 2006300
+            },
+            "LTL": {
+              "shipments": 469,
+              "revenue": 1079400
+            },
+            "Expedited": {
+              "shipments": 216,
+              "revenue": 557200
+            }
           }
         }
       }
@@ -489,53 +2586,122 @@
     {
       "month": "2025-10",
       "label": "October",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1412,
           "onTimeRate": 93.6,
           "exceptions": 18,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 2,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.2,
           "revenue": 3598400,
           "byMode": {
-            "TL": { "shipments": 714, "revenue": 1962700 },
-            "LTL": { "shipments": 488, "revenue": 1108200 },
-            "Expedited": { "shipments": 210, "revenue": 527500 }
+            "TL": {
+              "shipments": 714,
+              "revenue": 1962700
+            },
+            "LTL": {
+              "shipments": 488,
+              "revenue": 1108200
+            },
+            "Expedited": {
+              "shipments": 210,
+              "revenue": 527500
+            }
           }
         },
         "Southeast": {
           "shipments": 1189,
           "onTimeRate": 94.9,
           "exceptions": 13,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 3.8,
           "revenue": 2978600,
           "byMode": {
-            "TL": { "shipments": 616, "revenue": 1642600 },
-            "LTL": { "shipments": 398, "revenue": 906300 },
-            "Expedited": { "shipments": 175, "revenue": 429700 }
+            "TL": {
+              "shipments": 616,
+              "revenue": 1642600
+            },
+            "LTL": {
+              "shipments": 398,
+              "revenue": 906300
+            },
+            "Expedited": {
+              "shipments": 175,
+              "revenue": 429700
+            }
           }
         },
         "Central": {
           "shipments": 1287,
           "onTimeRate": 94.4,
           "exceptions": 15,
+          "exceptionsByType": {
+            "Weather Delay": 2,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 3.9,
           "revenue": 3264100,
           "byMode": {
-            "TL": { "shipments": 669, "revenue": 1794600 },
-            "LTL": { "shipments": 430, "revenue": 998400 },
-            "Expedited": { "shipments": 188, "revenue": 471100 }
+            "TL": {
+              "shipments": 669,
+              "revenue": 1794600
+            },
+            "LTL": {
+              "shipments": 430,
+              "revenue": 998400
+            },
+            "Expedited": {
+              "shipments": 188,
+              "revenue": 471100
+            }
           }
         },
         "West": {
           "shipments": 1434,
           "onTimeRate": 92.7,
           "exceptions": 22,
+          "exceptionsByType": {
+            "Weather Delay": 3,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 4,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 4
+          },
           "avgTransitDays": 4.3,
           "revenue": 3714300,
           "byMode": {
-            "TL": { "shipments": 736, "revenue": 2047100 },
-            "LTL": { "shipments": 478, "revenue": 1100200 },
-            "Expedited": { "shipments": 220, "revenue": 567000 }
+            "TL": {
+              "shipments": 736,
+              "revenue": 2047100
+            },
+            "LTL": {
+              "shipments": 478,
+              "revenue": 1100200
+            },
+            "Expedited": {
+              "shipments": 220,
+              "revenue": 567000
+            }
           }
         }
       }
@@ -543,53 +2709,122 @@
     {
       "month": "2025-11",
       "label": "November",
+      "monthStatus": "actual",
       "regions": {
         "Northeast": {
           "shipments": 1467,
           "onTimeRate": 91.8,
           "exceptions": 27,
+          "exceptionsByType": {
+            "Weather Delay": 9,
+            "Carrier No-Show": 5,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 4,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.4,
           "revenue": 3738100,
           "byMode": {
-            "TL": { "shipments": 742, "revenue": 2041300 },
-            "LTL": { "shipments": 507, "revenue": 1148600 },
-            "Expedited": { "shipments": 218, "revenue": 548200 }
+            "TL": {
+              "shipments": 742,
+              "revenue": 2041300
+            },
+            "LTL": {
+              "shipments": 507,
+              "revenue": 1148600
+            },
+            "Expedited": {
+              "shipments": 218,
+              "revenue": 548200
+            }
           }
         },
         "Southeast": {
           "shipments": 1214,
           "onTimeRate": 93.4,
           "exceptions": 17,
+          "exceptionsByType": {
+            "Weather Delay": 6,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 3.9,
           "revenue": 3047200,
           "byMode": {
-            "TL": { "shipments": 630, "revenue": 1682800 },
-            "LTL": { "shipments": 407, "revenue": 926100 },
-            "Expedited": { "shipments": 177, "revenue": 438300 }
+            "TL": {
+              "shipments": 630,
+              "revenue": 1682800
+            },
+            "LTL": {
+              "shipments": 407,
+              "revenue": 926100
+            },
+            "Expedited": {
+              "shipments": 177,
+              "revenue": 438300
+            }
           }
         },
         "Central": {
           "shipments": 1324,
           "onTimeRate": 92.9,
           "exceptions": 20,
+          "exceptionsByType": {
+            "Weather Delay": 7,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 3,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.1,
           "revenue": 3367800,
           "byMode": {
-            "TL": { "shipments": 689, "revenue": 1851200 },
-            "LTL": { "shipments": 443, "revenue": 1028700 },
-            "Expedited": { "shipments": 192, "revenue": 487900 }
+            "TL": {
+              "shipments": 689,
+              "revenue": 1851200
+            },
+            "LTL": {
+              "shipments": 443,
+              "revenue": 1028700
+            },
+            "Expedited": {
+              "shipments": 192,
+              "revenue": 487900
+            }
           }
         },
         "West": {
           "shipments": 1472,
           "onTimeRate": 91.3,
           "exceptions": 26,
+          "exceptionsByType": {
+            "Weather Delay": 10,
+            "Carrier No-Show": 4,
+            "Damaged Freight": 3,
+            "Customs Hold": 3,
+            "Equipment Failure": 3,
+            "Missed Connection": 3
+          },
           "avgTransitDays": 4.5,
           "revenue": 3812400,
           "byMode": {
-            "TL": { "shipments": 756, "revenue": 2102600 },
-            "LTL": { "shipments": 491, "revenue": 1128700 },
-            "Expedited": { "shipments": 225, "revenue": 581100 }
+            "TL": {
+              "shipments": 756,
+              "revenue": 2102600
+            },
+            "LTL": {
+              "shipments": 491,
+              "revenue": 1128700
+            },
+            "Expedited": {
+              "shipments": 225,
+              "revenue": 581100
+            }
           }
         }
       }
@@ -597,73 +2832,294 @@
     {
       "month": "2025-12",
       "label": "December",
+      "monthStatus": "in-progress",
       "regions": {
         "Northeast": {
-          "shipments": 1503,
+          "shipments": 873,
           "onTimeRate": 90.1,
-          "exceptions": 33,
+          "exceptions": 19,
+          "exceptionsByType": {
+            "Weather Delay": 7,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 3,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.5,
-          "revenue": 3834700,
+          "revenue": 2226600,
           "byMode": {
-            "TL": { "shipments": 761, "revenue": 2094600 },
-            "LTL": { "shipments": 519, "revenue": 1176800 },
-            "Expedited": { "shipments": 223, "revenue": 563300 }
+            "TL": {
+              "shipments": 442,
+              "revenue": 1216219
+            },
+            "LTL": {
+              "shipments": 301,
+              "revenue": 683303
+            },
+            "Expedited": {
+              "shipments": 130,
+              "revenue": 327078
+            }
           }
         },
         "Southeast": {
-          "shipments": 1238,
+          "shipments": 719,
           "onTimeRate": 92.6,
-          "exceptions": 19,
+          "exceptions": 11,
+          "exceptionsByType": {
+            "Weather Delay": 4,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 1,
+            "Customs Hold": 1,
+            "Equipment Failure": 2,
+            "Missed Connection": 1
+          },
           "avgTransitDays": 4.0,
-          "revenue": 3112400,
+          "revenue": 1807200,
           "byMode": {
-            "TL": { "shipments": 643, "revenue": 1716700 },
-            "LTL": { "shipments": 414, "revenue": 944800 },
-            "Expedited": { "shipments": 181, "revenue": 450900 }
+            "TL": {
+              "shipments": 373,
+              "revenue": 996793
+            },
+            "LTL": {
+              "shipments": 241,
+              "revenue": 548594
+            },
+            "Expedited": {
+              "shipments": 105,
+              "revenue": 261813
+            }
           }
         },
         "Central": {
-          "shipments": 1356,
+          "shipments": 787,
           "onTimeRate": 91.7,
-          "exceptions": 24,
+          "exceptions": 14,
+          "exceptionsByType": {
+            "Weather Delay": 5,
+            "Carrier No-Show": 2,
+            "Damaged Freight": 2,
+            "Customs Hold": 1,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.2,
-          "revenue": 3448900,
+          "revenue": 2002587,
           "byMode": {
-            "TL": { "shipments": 705, "revenue": 1896300 },
-            "LTL": { "shipments": 454, "revenue": 1054100 },
-            "Expedited": { "shipments": 197, "revenue": 498500 }
+            "TL": {
+              "shipments": 409,
+              "revenue": 1101077
+            },
+            "LTL": {
+              "shipments": 264,
+              "revenue": 612058
+            },
+            "Expedited": {
+              "shipments": 114,
+              "revenue": 289452
+            }
           }
         },
         "West": {
-          "shipments": 1501,
+          "shipments": 872,
           "onTimeRate": 90.4,
-          "exceptions": 31,
+          "exceptions": 18,
+          "exceptionsByType": {
+            "Weather Delay": 7,
+            "Carrier No-Show": 3,
+            "Damaged Freight": 2,
+            "Customs Hold": 2,
+            "Equipment Failure": 2,
+            "Missed Connection": 2
+          },
           "avgTransitDays": 4.6,
-          "revenue": 3891200,
+          "revenue": 2259406,
           "byMode": {
-            "TL": { "shipments": 771, "revenue": 2148700 },
-            "LTL": { "shipments": 501, "revenue": 1151400 },
-            "Expedited": { "shipments": 229, "revenue": 591100 }
+            "TL": {
+              "shipments": 448,
+              "revenue": 1247632
+            },
+            "LTL": {
+              "shipments": 291,
+              "revenue": 668555
+            },
+            "Expedited": {
+              "shipments": 133,
+              "revenue": 343219
+            }
           }
         }
-      }
+      },
+      "daysElapsed": 18,
+      "daysInMonth": 31
     }
   ],
   "exceptions": [
-    { "id": "EXC-4821", "month": "2025-12", "region": "West", "mode": "TL", "type": "Weather Delay", "description": "Snowstorm closure I-80 westbound — 14 shipments rerouted via I-70", "priority": "High", "status": "Open", "ageDays": 3 },
-    { "id": "EXC-4819", "month": "2025-12", "region": "Northeast", "mode": "LTL", "type": "Carrier No-Show", "description": "Carrier failed pickup at Boston distribution center, rescheduled +1 day", "priority": "High", "status": "Open", "ageDays": 5 },
-    { "id": "EXC-4815", "month": "2025-12", "region": "Central", "mode": "Expedited", "type": "Damaged Freight", "description": "Pallet collapse during transit — 3 units damaged, claim filed", "priority": "High", "status": "Open", "ageDays": 7 },
-    { "id": "EXC-4812", "month": "2025-12", "region": "Northeast", "mode": "TL", "type": "Weather Delay", "description": "Ice storm delays across I-90 corridor, ETAs pushed 48hrs", "priority": "High", "status": "Open", "ageDays": 8 },
-    { "id": "EXC-4808", "month": "2025-12", "region": "West", "mode": "LTL", "type": "Customs Hold", "description": "Cross-border shipment held at Otay Mesa — paperwork discrepancy", "priority": "Medium", "status": "Open", "ageDays": 10 },
-    { "id": "EXC-4803", "month": "2025-12", "region": "Southeast", "mode": "TL", "type": "Equipment Failure", "description": "Reefer unit malfunction on I-75, temp-sensitive load at risk", "priority": "High", "status": "Open", "ageDays": 4 },
-    { "id": "EXC-4798", "month": "2025-11", "region": "West", "mode": "TL", "type": "Weather Delay", "description": "Fog-related pileup on I-5 near Grapevine — 6hr delay", "priority": "Medium", "status": "Open", "ageDays": 14 },
-    { "id": "EXC-4793", "month": "2025-11", "region": "Northeast", "mode": "Expedited", "type": "Missed Connection", "description": "Late arrival at Newark hub caused missed linehaul to Charlotte", "priority": "Medium", "status": "Open", "ageDays": 18 },
-    { "id": "EXC-4789", "month": "2025-11", "region": "Central", "mode": "LTL", "type": "Address Correction", "description": "Consignee address invalid — shipment held at Dallas terminal", "priority": "Low", "status": "Open", "ageDays": 21 },
-    { "id": "EXC-4784", "month": "2025-11", "region": "Southeast", "mode": "TL", "type": "Capacity Shortage", "description": "No available drivers for Atlanta-to-Miami lane, delayed 2 days", "priority": "Medium", "status": "Open", "ageDays": 16 },
-    { "id": "EXC-4779", "month": "2025-10", "region": "West", "mode": "Expedited", "type": "Damaged Freight", "description": "Forklift damage at Phoenix cross-dock — customer notified", "priority": "Medium", "status": "Open", "ageDays": 28 },
-    { "id": "EXC-4774", "month": "2025-10", "region": "Northeast", "mode": "TL", "type": "Carrier No-Show", "description": "Second no-show this month from same carrier — escalated to procurement", "priority": "High", "status": "Open", "ageDays": 31 },
-    { "id": "EXC-4770", "month": "2025-10", "region": "Central", "mode": "TL", "type": "Documentation Error", "description": "BOL mismatch on Chicago outbound — shipment held for audit", "priority": "Low", "status": "Open", "ageDays": 34 },
-    { "id": "EXC-4766", "month": "2025-09", "region": "West", "mode": "LTL", "type": "Overweight Violation", "description": "Axle weight exceeded at Donner Pass weigh station — reloaded", "priority": "Low", "status": "Open", "ageDays": 42 },
-    { "id": "EXC-4761", "month": "2025-09", "region": "Southeast", "mode": "Expedited", "type": "Weather Delay", "description": "Hurricane warning — Jacksonville port operations suspended 3 days", "priority": "High", "status": "Open", "ageDays": 38 }
+    {
+      "id": "EXC-4821",
+      "month": "2025-12",
+      "region": "West",
+      "mode": "TL",
+      "type": "Weather Delay",
+      "description": "Snowstorm closure I-80 westbound — 14 shipments rerouted via I-70",
+      "priority": "High",
+      "status": "Open",
+      "ageDays": 3
+    },
+    {
+      "id": "EXC-4819",
+      "month": "2025-12",
+      "region": "Northeast",
+      "mode": "LTL",
+      "type": "Carrier No-Show",
+      "description": "Carrier failed pickup at Boston distribution center, rescheduled +1 day",
+      "priority": "High",
+      "status": "Open",
+      "ageDays": 5
+    },
+    {
+      "id": "EXC-4815",
+      "month": "2025-12",
+      "region": "Central",
+      "mode": "Expedited",
+      "type": "Damaged Freight",
+      "description": "Pallet collapse during transit — 3 units damaged, claim filed",
+      "priority": "High",
+      "status": "Open",
+      "ageDays": 7
+    },
+    {
+      "id": "EXC-4812",
+      "month": "2025-12",
+      "region": "Northeast",
+      "mode": "TL",
+      "type": "Weather Delay",
+      "description": "Ice storm delays across I-90 corridor, ETAs pushed 48hrs",
+      "priority": "High",
+      "status": "Open",
+      "ageDays": 8
+    },
+    {
+      "id": "EXC-4808",
+      "month": "2025-12",
+      "region": "West",
+      "mode": "LTL",
+      "type": "Customs Hold",
+      "description": "Cross-border shipment held at Otay Mesa — paperwork discrepancy",
+      "priority": "Medium",
+      "status": "Open",
+      "ageDays": 10
+    },
+    {
+      "id": "EXC-4803",
+      "month": "2025-12",
+      "region": "Southeast",
+      "mode": "TL",
+      "type": "Equipment Failure",
+      "description": "Reefer unit malfunction on I-75, temp-sensitive load at risk",
+      "priority": "High",
+      "status": "Open",
+      "ageDays": 4
+    },
+    {
+      "id": "EXC-4798",
+      "month": "2025-11",
+      "region": "West",
+      "mode": "TL",
+      "type": "Weather Delay",
+      "description": "Fog-related pileup on I-5 near Grapevine — 6hr delay",
+      "priority": "Medium",
+      "status": "Open",
+      "ageDays": 14
+    },
+    {
+      "id": "EXC-4793",
+      "month": "2025-11",
+      "region": "Northeast",
+      "mode": "Expedited",
+      "type": "Missed Connection",
+      "description": "Late arrival at Newark hub caused missed linehaul to Charlotte",
+      "priority": "Medium",
+      "status": "Open",
+      "ageDays": 18
+    },
+    {
+      "id": "EXC-4789",
+      "month": "2025-11",
+      "region": "Central",
+      "mode": "LTL",
+      "type": "Address Correction",
+      "description": "Consignee address invalid — shipment held at Dallas terminal",
+      "priority": "Low",
+      "status": "Open",
+      "ageDays": 21
+    },
+    {
+      "id": "EXC-4784",
+      "month": "2025-11",
+      "region": "Southeast",
+      "mode": "TL",
+      "type": "Capacity Shortage",
+      "description": "No available drivers for Atlanta-to-Miami lane, delayed 2 days",
+      "priority": "Medium",
+      "status": "Open",
+      "ageDays": 16
+    },
+    {
+      "id": "EXC-4779",
+      "month": "2025-10",
+      "region": "West",
+      "mode": "Expedited",
+      "type": "Damaged Freight",
+      "description": "Forklift damage at Phoenix cross-dock — customer notified",
+      "priority": "Medium",
+      "status": "Open",
+      "ageDays": 28
+    },
+    {
+      "id": "EXC-4774",
+      "month": "2025-10",
+      "region": "Northeast",
+      "mode": "TL",
+      "type": "Carrier No-Show",
+      "description": "Second no-show this month from same carrier — escalated to procurement",
+      "priority": "High",
+      "status": "Open",
+      "ageDays": 31
+    },
+    {
+      "id": "EXC-4770",
+      "month": "2025-10",
+      "region": "Central",
+      "mode": "TL",
+      "type": "Documentation Error",
+      "description": "BOL mismatch on Chicago outbound — shipment held for audit",
+      "priority": "Low",
+      "status": "Open",
+      "ageDays": 34
+    },
+    {
+      "id": "EXC-4766",
+      "month": "2025-09",
+      "region": "West",
+      "mode": "LTL",
+      "type": "Overweight Violation",
+      "description": "Axle weight exceeded at Donner Pass weigh station — reloaded",
+      "priority": "Low",
+      "status": "Open",
+      "ageDays": 42
+    },
+    {
+      "id": "EXC-4761",
+      "month": "2025-09",
+      "region": "Southeast",
+      "mode": "Expedited",
+      "type": "Weather Delay",
+      "description": "Hurricane warning — Jacksonville port operations suspended 3 days",
+      "priority": "High",
+      "status": "Open",
+      "ageDays": 38
+    }
   ]
 }
